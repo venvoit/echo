@@ -1,0 +1,10952 @@
+[
+  {
+    "id": 0,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "U",
+          "F"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "L",
+          "V",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "N",
+          "A",
+          "G",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "P",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "S",
+          "N",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "F",
+          "D",
+          "U",
+          "E",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "N",
+          "G",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "E",
+          "P",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "L",
+          "I",
+          "A",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "Y",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "G",
+          "S",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "V",
+          "E",
+          "D",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "L",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "M",
+          "R",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "P",
+          "O",
+          "I",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "O",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "Y",
+          "E",
+          "D",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "I",
+          "N",
+          "A",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "O",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "K",
+          "S",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "T",
+          "E",
+          "R",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "E",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "P",
+          "Y",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "U",
+          "I",
+          "M",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "A",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "S",
+          "L",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "E",
+          "D",
+          "I",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "S",
+          "U",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "P",
+          "L",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "O",
+          "R",
+          "V"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "O",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "I",
+          "S",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "A",
+          "M",
+          "N",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "O",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "G",
+          "N",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "T",
+          "S",
+          "E",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "L",
+          "E",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "H",
+          "S",
+          "T",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "V",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "F",
+          "S",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "D",
+          "E",
+          "N",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "O",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "N",
+          "M",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "L",
+          "E",
+          "U",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "F",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "L",
+          "H",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "R",
+          "C",
+          "N",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "C",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "T",
+          "N",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "R",
+          "E",
+          "O",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "A",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "U",
+          "K",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "R",
+          "P",
+          "E",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "P",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "S",
+          "K",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "E",
+          "C",
+          "L",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "B",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "H",
+          "T",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "N",
+          "G",
+          "M",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "P",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "S",
+          "W",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "B",
+          "R",
+          "E",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "E",
+          "F",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "I",
+          "N",
+          "S",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "Y",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "G",
+          "P",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "E",
+          "R",
+          "C",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "I",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "S",
+          "Y",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "R",
+          "B",
+          "E",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "A",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "S",
+          "D",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "E",
+          "I",
+          "N",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "F",
+          "U",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "H",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "T",
+          "A",
+          "I",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "Y",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "K",
+          "B",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "E",
+          "I",
+          "T",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "H",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "U",
+          "B",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "N",
+          "G",
+          "I",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "M",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "A",
+          "C",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "N",
+          "D",
+          "E",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "T",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "G",
+          "N",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "A",
+          "E",
+          "R",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "H",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "C",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "L",
+          "G",
+          "O",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "T",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "H",
+          "A",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "R",
+          "E",
+          "I",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "G",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "T",
+          "M",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "R",
+          "E",
+          "I",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "D",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "N",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "I",
+          "E",
+          "C",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "M",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "P",
+          "S",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "D",
+          "I",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "N",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "U",
+          "S",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "A",
+          "D",
+          "L",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "Y",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "U",
+          "S",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "T",
+          "E",
+          "G",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "O",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "S",
+          "A",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "P",
+          "D",
+          "I",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "K",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "I",
+          "G",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "U",
+          "L",
+          "E",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "L",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "V",
+          "I",
+          "E",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "U",
+          "O",
+          "S",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "K",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "G",
+          "A",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "O",
+          "H",
+          "S",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "M",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "E",
+          "B",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "N",
+          "G",
+          "I",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "I",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "S",
+          "B",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "E",
+          "D",
+          "A",
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "S",
+          "U",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "N",
+          "I",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "A",
+          "D",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "K",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "M",
+          "E",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "L",
+          "I",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "N",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "A",
+          "S",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "T",
+          "I",
+          "R",
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "Y",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "U",
+          "S",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "I",
+          "D",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "L",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "G",
+          "P",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "A",
+          "C",
+          "E",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "U",
+          "S",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "B",
+          "G",
+          "A",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "T",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "G",
+          "S",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "D",
+          "E",
+          "I",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "T",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "A",
+          "P",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "E",
+          "B",
+          "S",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "B",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "W",
+          "S",
+          "P",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "D",
+          "I",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "N",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "M",
+          "S",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "I",
+          "E",
+          "T",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "E",
+          "W",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "B",
+          "A",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "S",
+          "H",
+          "U",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "U",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "D",
+          "V"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "I",
+          "N",
+          "O",
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "C",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "N",
+          "I",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "R",
+          "T",
+          "L",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "A",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "G",
+          "S",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "O",
+          "R",
+          "C",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "M",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "P",
+          "I",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "A",
+          "N",
+          "D",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "A",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "H",
+          "I",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "E",
+          "R",
+          "D",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "P",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "T",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "N",
+          "U",
+          "G",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "N",
+          "M",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "O",
+          "W",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "I",
+          "R",
+          "V"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "G",
+          "O",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "W",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "T",
+          "M",
+          "I",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "P",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "T",
+          "A",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "S",
+          "N",
+          "O",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "A",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "E",
+          "D",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "S",
+          "I",
+          "M",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "O",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "S",
+          "T",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "I",
+          "U",
+          "L",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "L",
+          "V"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "U",
+          "S",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "E",
+          "O",
+          "D",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "H",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "A",
+          "R",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "I",
+          "G",
+          "N",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "A",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "Y",
+          "P",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "N",
+          "I",
+          "U",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "N",
+          "A",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "G",
+          "Y",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "R",
+          "I",
+          "E",
+          "H"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "T",
+          "E",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "D",
+          "I",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "W",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "I",
+          "B",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "T",
+          "S",
+          "E",
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "A",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "S",
+          "L",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "T",
+          "N",
+          "E",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "D",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "E",
+          "B",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "N",
+          "M",
+          "G",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "Y",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "I",
+          "B",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "E",
+          "C",
+          "A",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "G",
+          "A",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "S",
+          "T",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "E",
+          "L",
+          "F",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "A",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "O",
+          "G",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "E",
+          "C",
+          "N",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "A",
+          "Z"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "G",
+          "Y",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "S",
+          "I",
+          "E",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "O",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "E",
+          "C",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "T",
+          "I",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "A",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "O",
+          "M",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "R",
+          "E",
+          "I",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "A",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "L",
+          "Y",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "E",
+          "I",
+          "R",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "K",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "I",
+          "N",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "E",
+          "M",
+          "U",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "T",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "B",
+          "N",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "F",
+          "L",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "T",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "D",
+          "I",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "U",
+          "A",
+          "M",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "U",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "H",
+          "O",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "T",
+          "E",
+          "I",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "F",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "K",
+          "S",
+          "A",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "O",
+          "L",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "W",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "N",
+          "G",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "Y",
+          "E",
+          "R",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "F",
+          "M",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "L",
+          "P",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "R",
+          "I",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "U",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "T",
+          "A",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "G",
+          "I",
+          "N",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "A",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "O",
+          "C",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "R",
+          "I",
+          "F",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "O",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "P",
+          "I",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "L",
+          "C",
+          "E",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "H",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "N",
+          "G",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "U",
+          "B",
+          "E",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "L",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "O",
+          "E",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "N",
+          "I",
+          "S",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "H",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "S",
+          "T",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "R",
+          "A",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "H",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "W",
+          "N",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "D",
+          "A",
+          "E",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "H",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "L",
+          "S",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "M",
+          "R",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "I",
+          "S",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "A",
+          "D",
+          "E",
+          "W"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "Y",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "L",
+          "O",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "E",
+          "D",
+          "I",
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "K",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "B",
+          "S",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "H",
+          "T",
+          "A",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "U",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "O",
+          "L",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "E",
+          "R",
+          "T",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "K",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "N",
+          "G",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "T",
+          "U",
+          "O",
+          "H"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "O",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "E",
+          "B",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "A",
+          "P",
+          "R",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "C",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "W",
+          "S",
+          "T",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "R",
+          "E",
+          "I",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "H",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "D",
+          "M",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "T",
+          "A",
+          "N",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "U",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "D",
+          "L",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "G",
+          "I",
+          "N",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "I",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "L",
+          "A",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "E",
+          "C",
+          "S",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "G",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "R",
+          "U",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "E",
+          "N",
+          "D",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "Y",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "L",
+          "A",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "I",
+          "N",
+          "E",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "U",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "P",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "R",
+          "C",
+          "T",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "I",
+          "V"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "S",
+          "T",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "A",
+          "N",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "R",
+          "F"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "T",
+          "A",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "P",
+          "S",
+          "D",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "Y",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "I",
+          "C",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "T",
+          "R",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "B",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "A",
+          "C",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "S",
+          "O",
+          "E",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "O",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "L",
+          "A",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "H",
+          "R",
+          "S",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "Y",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "S",
+          "E",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "I",
+          "N",
+          "A",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "A",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "U",
+          "D",
+          "E",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "A",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "O",
+          "L",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "R",
+          "U",
+          "N",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "H",
+          "S",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "D",
+          "E",
+          "I",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "Y",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "R",
+          "O",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "A",
+          "B",
+          "G",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "A",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "U",
+          "L",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "D",
+          "O",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "M",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "R",
+          "B",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "T",
+          "S",
+          "A",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "T",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "M",
+          "E",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "S",
+          "N",
+          "O",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "R",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "A",
+          "H",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "I",
+          "E",
+          "D",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "P",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "S",
+          "A",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "V",
+          "D",
+          "R",
+          "E",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "F",
+          "R",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "N",
+          "O",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "G",
+          "A",
+          "E",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "L",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "S",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "C",
+          "A",
+          "H",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "K",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "L",
+          "P",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "E",
+          "D",
+          "B",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "C",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "G",
+          "T",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "S",
+          "E",
+          "L",
+          "V"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "I",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "S",
+          "A",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "B",
+          "U",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "O",
+          "P",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "E",
+          "R",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "H",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "E",
+          "M",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "O",
+          "A",
+          "N",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "C",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "E",
+          "L",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "U",
+          "I",
+          "M",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "M",
+          "Z"
+        ]
+      },
+      {
+        "letters": [
+          "Y",
+          "P",
+          "E",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "G",
+          "N",
+          "I",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "T",
+          "F"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "P",
+          "L",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "N",
+          "R",
+          "C",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "U",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "T",
+          "A",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "D",
+          "R",
+          "E",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "L",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "S",
+          "P",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "R",
+          "T",
+          "E",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "B",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "P",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "N",
+          "E",
+          "R",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "P",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "S",
+          "Y",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "G",
+          "R",
+          "D",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "K",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "Y",
+          "R",
+          "E",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "O",
+          "G",
+          "N",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "H",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "L",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "N",
+          "T",
+          "I",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "L",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "S",
+          "H",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "T",
+          "R",
+          "C",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "I",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "O",
+          "G",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "E",
+          "R",
+          "B",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "N",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "O",
+          "P",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "L",
+          "R",
+          "D",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "S",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "W",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "A",
+          "O",
+          "T",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "P",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "H",
+          "Y",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "E",
+          "D",
+          "I",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "P",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "M",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "U",
+          "N",
+          "I",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "E",
+          "F",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "S",
+          "U",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "G",
+          "N",
+          "I",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "H",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "A",
+          "K",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "D",
+          "R",
+          "E",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "E",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "I",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "U",
+          "O",
+          "T",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "D",
+          "M",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "V",
+          "I",
+          "L",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "A",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "Y",
+          "O",
+          "L",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "P",
+          "E",
+          "D",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "A",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "L",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "I",
+          "E",
+          "R",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "K",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "N",
+          "I",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "R",
+          "E",
+          "D",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "E",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "U",
+          "S",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "R",
+          "G",
+          "I",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "C",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "T",
+          "L",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "U",
+          "D",
+          "N",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "S",
+          "T",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "E",
+          "D",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "N",
+          "G",
+          "O",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "Z",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "A",
+          "W",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "R",
+          "E",
+          "D",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "T",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "K",
+          "P",
+          "O",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "R",
+          "U",
+          "E",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "U",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "E",
+          "C",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "S",
+          "O",
+          "I",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "P",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "E",
+          "U",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "I",
+          "A",
+          "G",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "L",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "G",
+          "I",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "E",
+          "R",
+          "W",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "S",
+          "O",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "R",
+          "E",
+          "P",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "M",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "L",
+          "Y",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "R",
+          "G",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "A",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "G",
+          "I",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "R",
+          "V",
+          "E",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "A",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "I",
+          "L",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "D",
+          "E",
+          "O",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "I",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "S",
+          "O",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "A",
+          "G",
+          "L",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "B",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "C",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "E",
+          "T",
+          "M",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "I",
+          "S",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "E",
+          "D",
+          "L",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "O",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "A",
+          "K",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "R",
+          "N",
+          "E",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "P",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "T",
+          "O",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "A",
+          "N",
+          "M",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "B",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "A",
+          "S",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "P",
+          "E",
+          "I",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "M",
+          "T",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "G",
+          "E",
+          "A",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "A",
+          "S",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "G",
+          "E",
+          "N",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "I",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "U",
+          "P",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "D",
+          "R",
+          "E",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 173,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "O",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "A",
+          "S",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "N",
+          "E",
+          "R",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "B",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "L",
+          "S",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "I",
+          "N",
+          "E",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "P",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "M",
+          "D",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "R",
+          "T",
+          "N",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "U",
+          "F"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "C",
+          "S",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "O",
+          "N",
+          "I",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 177,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "O",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "S",
+          "T",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "L",
+          "E",
+          "R",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 178,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "R",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "A",
+          "N",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "S",
+          "L",
+          "I",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "L",
+          "F"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "D",
+          "R",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "I",
+          "O",
+          "S",
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "K",
+          "S",
+          "L",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "C",
+          "D",
+          "R",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "Y",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "O",
+          "N",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "T",
+          "S",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "U",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "K",
+          "A",
+          "P",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "I",
+          "M",
+          "T",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "R",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "U",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "I",
+          "A",
+          "T",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "B",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "O",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "A",
+          "T",
+          "S",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "H",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "R",
+          "B",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "A",
+          "P",
+          "I",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "L",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "A",
+          "C",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "R",
+          "I",
+          "B",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "E",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "P",
+          "A",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "R",
+          "G",
+          "U",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 188,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "N",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "C",
+          "U",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "R",
+          "E",
+          "I",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 189,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "S",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "P",
+          "A",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "R",
+          "F",
+          "N",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 190,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "A",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "E",
+          "F",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "N",
+          "I",
+          "G",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 191,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "B",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "W",
+          "R",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "I",
+          "N",
+          "O",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 192,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "I",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "C",
+          "T",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "M",
+          "U",
+          "E",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "B",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "D",
+          "E",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "T",
+          "S",
+          "U",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "G",
+          "N",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "S",
+          "C",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "D",
+          "I",
+          "E",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "W",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "B",
+          "G",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "T",
+          "S",
+          "D",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 196,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "D",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "I",
+          "B",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "H",
+          "O",
+          "T",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "B",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "Y",
+          "L",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "E",
+          "R",
+          "T",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 198,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "M",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "K",
+          "E",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "G",
+          "A",
+          "N",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 199,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "C",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "S",
+          "M",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "R",
+          "N",
+          "U",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "H",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "C",
+          "D",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "B",
+          "L",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "F",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "H",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "N",
+          "G",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "Y",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "O",
+          "N",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "S",
+          "A",
+          "D",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "M",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "S",
+          "U",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "E",
+          "C",
+          "O",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "B",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "E",
+          "R",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "I",
+          "U",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "R",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "M",
+          "H",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "I",
+          "N",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "E",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "S",
+          "O",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "I",
+          "N",
+          "G",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "A",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "S",
+          "Y",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "I",
+          "E",
+          "N",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "I",
+          "G",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "D",
+          "E",
+          "P",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "G",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "W",
+          "H",
+          "S",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "F",
+          "I",
+          "T",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "S",
+          "A",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "I",
+          "F",
+          "D",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "T",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "Y",
+          "L",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "D",
+          "S",
+          "C",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "M",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "T",
+          "S",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "A",
+          "W",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 213,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "C",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "V",
+          "E",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "G",
+          "L",
+          "N",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "I",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "K",
+          "L",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "P",
+          "A",
+          "R",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 215,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "F",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "L",
+          "Y",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "I",
+          "N",
+          "S",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "D",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "N",
+          "G",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "S",
+          "T",
+          "E",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "L",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "I",
+          "T",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "F",
+          "S",
+          "U",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "B",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "Y",
+          "S",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "N",
+          "O",
+          "I",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "G",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "P",
+          "H",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "N",
+          "D",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "H",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "R",
+          "S",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "I",
+          "N",
+          "U",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "K",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "O",
+          "S",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "I",
+          "E",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "D",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "S",
+          "L",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "A",
+          "T",
+          "E",
+          "H"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "A",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "S",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "E",
+          "D",
+          "L",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "P",
+          "E",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "T",
+          "S",
+          "U",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "S",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "G",
+          "A",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "P",
+          "E",
+          "D",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "P",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "S",
+          "H",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "O",
+          "I",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "U",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "S",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "I",
+          "A",
+          "T",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "I",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "S",
+          "T",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "E",
+          "R",
+          "G",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "K",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "Y",
+          "L",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "D",
+          "E",
+          "R",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "E",
+          "D",
+          "V"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "P",
+          "S",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "G",
+          "O",
+          "N",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "O",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "S",
+          "L",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "E",
+          "D",
+          "R",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "S",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "L",
+          "O",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "N",
+          "U",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "F",
+          "T",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "P",
+          "I",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "D",
+          "E",
+          "C",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "O",
+          "F"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "E",
+          "S",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "N",
+          "R",
+          "G",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "I",
+          "Z"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "S",
+          "P",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "A",
+          "D",
+          "L",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "T",
+          "Z"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "S",
+          "O",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "R",
+          "B",
+          "A",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "P",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "U",
+          "B",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "R",
+          "D",
+          "N",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 238,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "N",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "G",
+          "Y",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "I",
+          "S",
+          "T",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "C",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "R",
+          "E",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "S",
+          "N",
+          "I",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 240,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "E",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "O",
+          "M",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "G",
+          "N",
+          "I",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 241,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "F",
+          "O",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "P",
+          "N",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "M",
+          "L",
+          "I",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "C",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "O",
+          "M",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "L",
+          "E",
+          "D",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "R",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "P",
+          "A",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "U",
+          "G",
+          "L",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 244,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "T",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "E",
+          "R",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "A",
+          "N",
+          "M",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 245,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "P",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "M",
+          "T",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "R",
+          "E",
+          "A",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "D",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "G",
+          "R",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "S",
+          "P",
+          "L",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 247,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "S",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "L",
+          "Y",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "D",
+          "P",
+          "E",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 248,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "T",
+          "Z"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "M",
+          "L",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "D",
+          "P",
+          "E",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "Y",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "T",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "R",
+          "D",
+          "A",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 250,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "M",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "H",
+          "W",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "N",
+          "I",
+          "G",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 251,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "I",
+          "V"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "S",
+          "H",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "E",
+          "A",
+          "L",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 252,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "A",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "P",
+          "I",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "N",
+          "D",
+          "E",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 253,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "Y",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "U",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "D",
+          "E",
+          "F",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 254,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "T",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "G",
+          "S",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "B",
+          "E",
+          "R",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 255,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "P",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "B",
+          "C",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "L",
+          "U",
+          "G",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 256,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "L",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "E",
+          "K",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "N",
+          "I",
+          "R",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 257,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "E",
+          "U",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "S",
+          "W",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "G",
+          "I",
+          "N",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 258,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Z",
+          "M",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "E",
+          "W",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "G",
+          "N",
+          "I",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 259,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "A",
+          "R",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "K",
+          "S",
+          "L",
+          "I",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 260,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "Z",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "A",
+          "H",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "E",
+          "R",
+          "U",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 261,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "T",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "E",
+          "V",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "I",
+          "G",
+          "R",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 262,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "F",
+          "T",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "D",
+          "E",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "A",
+          "R",
+          "S",
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "N",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "W",
+          "T",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "R",
+          "D",
+          "E",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 264,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "E",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "L",
+          "S",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "R",
+          "I",
+          "N",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 265,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "A",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "C",
+          "O",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "E",
+          "D",
+          "B",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Z",
+          "M",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "E",
+          "T",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "U",
+          "I",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 267,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "U",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "M",
+          "S",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "O",
+          "C",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 268,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "Y",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "T",
+          "N",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "R",
+          "C",
+          "A",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 269,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "L",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "B",
+          "A",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "N",
+          "I",
+          "G",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 270,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "K",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "M",
+          "E",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "I",
+          "N",
+          "G",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 271,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "K",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "H",
+          "O",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "I",
+          "N",
+          "E",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 272,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "O",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "A",
+          "Y",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "I",
+          "G",
+          "N",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 273,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "D",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "P",
+          "U",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "N",
+          "R",
+          "E",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 274,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "A",
+          "Z"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "S",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "N",
+          "T",
+          "I",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "P",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "D",
+          "E",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "L",
+          "N",
+          "U",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 276,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "B",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "M",
+          "S",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "D",
+          "R",
+          "E",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 277,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "B",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "I",
+          "G",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "S",
+          "A",
+          "D",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 278,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "O",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "H",
+          "D",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "E",
+          "I",
+          "P",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 279,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "G",
+          "I",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "H",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "L",
+          "F",
+          "E",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 280,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "B",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "I",
+          "A",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "U",
+          "T",
+          "S",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 281,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "M",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "S",
+          "O",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "L",
+          "B",
+          "A",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 282,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "E",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "G",
+          "R",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "O",
+          "T",
+          "U",
+          "H"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 283,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "U",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "T",
+          "O",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "S",
+          "N",
+          "I",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "P",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "E",
+          "L",
+          "F"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "O",
+          "T",
+          "G",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 285,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "A",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "R",
+          "I",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "S",
+          "O",
+          "T",
+          "H"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "Y",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "O",
+          "G",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "E",
+          "I",
+          "R",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 287,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "O",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "E",
+          "S",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "I",
+          "N",
+          "M",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 288,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "W",
+          "T",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "D",
+          "E",
+          "R",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 289,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "B",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "E",
+          "T",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "I",
+          "R",
+          "U",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 290,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "T",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "S",
+          "L",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "G",
+          "A",
+          "D",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 291,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "T",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "E",
+          "R",
+          "F"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "G",
+          "I",
+          "N",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 292,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "L",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "G",
+          "A",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "I",
+          "V",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 293,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "T",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "G",
+          "N",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "D",
+          "S",
+          "E",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 294,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "A",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "O",
+          "T",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "B",
+          "E",
+          "R",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 295,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "W",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "L",
+          "V",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "A",
+          "R",
+          "N",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 296,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "G",
+          "R",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "C",
+          "O",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "N",
+          "U",
+          "T",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 297,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "P",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "T",
+          "M",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "R",
+          "E",
+          "G",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 298,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "S",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "N",
+          "H",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "E",
+          "B",
+          "D",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 299,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "T",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "Y",
+          "S",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "N",
+          "G",
+          "I",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "K",
+          "U",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "B",
+          "A",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "T",
+          "O",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 301,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "N",
+          "A",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "S",
+          "O",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "P",
+          "T",
+          "I",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "O",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "S",
+          "L",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "I",
+          "E",
+          "R",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "M",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "S",
+          "B",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "A",
+          "R",
+          "L",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "P",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "F",
+          "T",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "E",
+          "R",
+          "D",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 305,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "R",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "E",
+          "S",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "T",
+          "G",
+          "I",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 306,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "N",
+          "I",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "A",
+          "L",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 307,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "L",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "Y",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "F",
+          "E",
+          "R",
+          "T",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 308,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "H",
+          "C",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "E",
+          "R",
+          "P",
+          "V"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 309,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "H",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "M",
+          "E",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "I",
+          "U",
+          "L",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 310,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "S",
+          "C",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "A",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "O",
+          "D",
+          "N",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 311,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "C",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "L",
+          "P",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "E",
+          "R",
+          "I",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 312,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "A",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "M",
+          "S",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "E",
+          "O",
+          "D",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 313,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "O",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "M",
+          "A",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "I",
+          "N",
+          "T",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 314,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "O",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "P",
+          "S",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "A",
+          "G",
+          "I",
+          "T"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 315,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "L",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "H",
+          "O",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "E",
+          "G",
+          "D",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 316,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "V",
+          "L",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "S",
+          "K",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "D",
+          "U",
+          "N",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 317,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "Z",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "S",
+          "O",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "D",
+          "E",
+          "I",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "H",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "T",
+          "N",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "R",
+          "M",
+          "E",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 319,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "W",
+          "T",
+          "I",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "N",
+          "E",
+          "R",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 320,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "N",
+          "L",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "C",
+          "E",
+          "T",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 321,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "H",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "L",
+          "E",
+          "V"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "G",
+          "M",
+          "I",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 322,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "C",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "R",
+          "D",
+          "E",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 323,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Y",
+          "O",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "E",
+          "M",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "A",
+          "S",
+          "G",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 324,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "G",
+          "U",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "L",
+          "A",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "T",
+          "O",
+          "H",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 325,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "N",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "S",
+          "K",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "E",
+          "R",
+          "T",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 326,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "K",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "S",
+          "M",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "U",
+          "L",
+          "I",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 327,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "L",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "T",
+          "C",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "E",
+          "R",
+          "D",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 328,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "W",
+          "A",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "S",
+          "O",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "U",
+          "D",
+          "E",
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 329,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "C",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "Y",
+          "S",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "G",
+          "I",
+          "A",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 330,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "C",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "L",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "G",
+          "R",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 331,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "E",
+          "D",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "S",
+          "O",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "G",
+          "M",
+          "N",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 332,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "O",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "A",
+          "G",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "I",
+          "E",
+          "N",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 333,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "C",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "B",
+          "L",
+          "E"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "M",
+          "I",
+          "G",
+          "N"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 334,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "S",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "G",
+          "I",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "R",
+          "L",
+          "E",
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 335,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "K",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "T",
+          "G",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "R",
+          "E",
+          "U",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 336,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "L",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "A",
+          "I",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "P",
+          "N",
+          "E",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 337,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "G",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "S",
+          "A",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "D",
+          "I",
+          "F",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 338,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "O",
+          "B",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "U",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "A",
+          "G",
+          "I",
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 339,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "M",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "B",
+          "E",
+          "R",
+          "D"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "S",
+          "O",
+          "N",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 340,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "G",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "O",
+          "C",
+          "S",
+          "R"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "E",
+          "T",
+          "N",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "U",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "S",
+          "T",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "V",
+          "E",
+          "D",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 342,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "K",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "L",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "R",
+          "O",
+          "P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 343,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "P",
+          "Z",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "R",
+          "E",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "N",
+          "O",
+          "I",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 344,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "L",
+          "B"
+        ]
+      },
+      {
+        "letters": [
+          "M",
+          "H",
+          "S",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "D",
+          "E",
+          "N",
+          "A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 345,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "Y",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "U",
+          "R",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "T",
+          "G",
+          "I",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 346,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "Z",
+          "O",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "W",
+          "S",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "B",
+          "E",
+          "A",
+          "L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 347,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "N",
+          "A",
+          "C"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "O",
+          "S",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "E",
+          "D",
+          "M",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "G",
+          "A",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "U",
+          "O",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "I",
+          "R",
+          "N",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 349,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "A",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "P",
+          "I",
+          "G"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "M",
+          "U",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 350,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "A",
+          "K"
+        ]
+      },
+      {
+        "letters": [
+          "T",
+          "G",
+          "N",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "F",
+          "D",
+          "E",
+          "L",
+          "U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 351,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "C",
+          "N",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "Y",
+          "L",
+          "O",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "E",
+          "V",
+          "R",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 352,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "Y",
+          "W"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "S",
+          "G",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "D",
+          "N",
+          "T",
+          "R",
+          "E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 353,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "A",
+          "T",
+          "H"
+        ]
+      },
+      {
+        "letters": [
+          "K",
+          "O",
+          "B",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "I",
+          "N",
+          "D",
+          "G"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 354,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "I",
+          "P",
+          "Y"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "A",
+          "O",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "U",
+          "D",
+          "E",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 355,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "Y",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "H",
+          "S",
+          "M",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "C",
+          "D",
+          "E",
+          "A",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 356,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "T",
+          "M",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "R",
+          "G",
+          "N",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "E",
+          "A",
+          "D",
+          "S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 357,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "M",
+          "L",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "S",
+          "A",
+          "B",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "D",
+          "R",
+          "F",
+          "I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 358,
+    "dayName": "MONDAY",
+    "rounds": [
+      {
+        "letters": [
+          "R",
+          "U",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "A",
+          "V",
+          "L"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "S",
+          "I",
+          "O",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 359,
+    "dayName": "TUESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "D",
+          "G",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "A",
+          "S",
+          "L",
+          "U"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "C",
+          "T",
+          "I",
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 360,
+    "dayName": "WEDNESDAY",
+    "rounds": [
+      {
+        "letters": [
+          "L",
+          "U",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "K",
+          "B",
+          "S",
+          "O"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "E",
+          "R",
+          "I",
+          "F"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 361,
+    "dayName": "THURSDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "T",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "G",
+          "B",
+          "N",
+          "I"
+        ]
+      },
+      {
+        "letters": [
+          "P",
+          "E",
+          "L",
+          "S",
+          "O"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 362,
+    "dayName": "FRIDAY",
+    "rounds": [
+      {
+        "letters": [
+          "U",
+          "L",
+          "P"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "R",
+          "B",
+          "M"
+        ]
+      },
+      {
+        "letters": [
+          "N",
+          "G",
+          "O",
+          "I",
+          "D"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 363,
+    "dayName": "SATURDAY",
+    "rounds": [
+      {
+        "letters": [
+          "B",
+          "U",
+          "T"
+        ]
+      },
+      {
+        "letters": [
+          "E",
+          "P",
+          "D",
+          "N"
+        ]
+      },
+      {
+        "letters": [
+          "L",
+          "I",
+          "S",
+          "A",
+          "C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 364,
+    "dayName": "SUNDAY",
+    "rounds": [
+      {
+        "letters": [
+          "H",
+          "L",
+          "A"
+        ]
+      },
+      {
+        "letters": [
+          "I",
+          "T",
+          "W",
+          "S"
+        ]
+      },
+      {
+        "letters": [
+          "U",
+          "E",
+          "N",
+          "D",
+          "R"
+        ]
+      }
+    ]
+  }
+]
