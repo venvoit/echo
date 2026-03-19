@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Echoes with Agnes T-V</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap" rel="stylesheet"	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-    <meta charset="UTF-8">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-gradient: linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #8b5cf6 100%);
@@ -388,7 +393,7 @@
         ];
 
         const MAX_ROUNDS = 3;
-        const STATS_KEY = 'echoes_agnes_stats_v29';
+        const STATS_KEY = 'echoes_agnes_stats'; // Stable key
         
         let currentDayIndex = 0; let currentRound = 0; let currentInput = ""; 
         let attempts = []; let dailyData = PUZZLE_DB[0];
@@ -415,10 +420,12 @@
         }
 
         function init() { 
+            // Calculate Day Index using Epoch (Jan 1, 2024)
             const epoch = new Date('2024-01-01T00:00:00Z').getTime();
             const daysElapsed = Math.floor((Date.now() - epoch) / 86400000);
             const todayIndex = daysElapsed % PUZZLE_DB.length;
             
+            // Check Daily Persistence
             const lastPlay = JSON.parse(localStorage.getItem('echoes_last_play') || '{}');
             if (lastPlay.date === getTodayStr()) {
                 currentDayIndex = todayIndex;
@@ -431,7 +438,7 @@
                 precalculateDailyTarget();
                 document.getElementById('dayIndicator').innerText = dailyData.dynamicDayName;
                 document.getElementById('headerDayLabel').innerText = dailyData.dynamicDayName;
-                endGame(true); 
+                endGame(true); // isReplay = true
             } else {
                 document.getElementById('introModal').classList.remove('hidden');
                 loadDay(todayIndex); 
@@ -483,7 +490,10 @@
 
         function getStats() { 
             let stats = JSON.parse(localStorage.getItem(STATS_KEY));
-            if (!stats) stats = { played:0, streak:0, maxStreak:0, bestWord:0 };
+            if (!stats) {
+                const old = JSON.parse(localStorage.getItem('echoes_agnes_stats_v29')); // simple migration
+                stats = old || { played:0, streak:0, maxStreak:0, bestWord:0 };
+            }
             return stats; 
         }
 
@@ -493,11 +503,12 @@
                 s.streak++; 
                 if (s.streak > s.maxStreak) s.maxStreak = s.streak;
             } else {
-                s.streak = 0; 
+                s.streak = 0; // Hard reset streak on failure
             }
             if (finalLen > s.bestWord) s.bestWord = finalLen;
             localStorage.setItem(STATS_KEY, JSON.stringify(s));
             
+            // Persist daily completion
             localStorage.setItem('echoes_last_play', JSON.stringify({
                 date: getTodayStr(),
                 attempts: attempts
@@ -548,6 +559,7 @@
         function loadRound(idx) {
             currentInput = ""; const rData = dailyData.rounds[idx];
             
+            // Defensively check words without unescaped RegExp
             const allowedSet = new Set(rData.letters.map(l => l.toLowerCase()));
             const matched = FULL_DICTIONARY.filter(w => [...w].every(c => allowedSet.has(c)));
             
