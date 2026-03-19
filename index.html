@@ -14,28 +14,58 @@
             --primary-btn: #6366f1; --accent: #10b981; --text-main: #334155;
             --text-light: #64748b; --dev-bg: rgba(30, 41, 59, 0.95); --dev-text: #60a5fa;
         }
+
         * { box-sizing: border-box; touch-action: manipulation; }
-        body { font-family: 'Varela Round', sans-serif; background: var(--bg-gradient); background-attachment: fixed; color: var(--text-main); margin: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; overflow-x: hidden; padding-bottom: 90px; }
         
-        #loadingScreen { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg-gradient); z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; transition: opacity 0.5s ease; text-align: center;}
-        .spinner { width: 50px; height: 50px; border: 5px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: white; animation: spin 1s ease-in-out infinite; margin-bottom: 20px; }
+        body {
+            font-family: 'Varela Round', sans-serif; background: var(--bg-gradient); background-attachment: fixed;
+            color: var(--text-main); margin: 0; display: flex; flex-direction: column; align-items: center;
+            min-height: 100vh; overflow-x: hidden; padding-bottom: 90px;
+        }
+
+        #loadingScreen {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg-gradient); z-index: 9999;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;
+            transition: opacity 0.5s ease; text-align: center; padding: 20px;
+        }
+        .spinner {
+            width: 50px; height: 50px; border: 5px solid rgba(255,255,255,0.3); border-radius: 50%;
+            border-top-color: white; animation: spin 1s ease-in-out infinite; margin-bottom: 20px;
+        }
         @keyframes spin { to { transform: rotate(360deg); } }
 
-        /* FIXED HEADER FOR MOBILE */
-        header { width: 100%; max-width: 500px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: flex-start; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.15); gap: 10px; }
-        .header-left { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1; }
-        .logo-main { font-size: 1.8rem; letter-spacing: 0.5px; font-weight: 800; white-space: nowrap; }
-        .logo-sub { font-size: 0.8rem; opacity: 0.9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;}
-        .header-right { display: flex; align-items: center; gap: 10px; }
+        /* HEADER UI */
+        header { 
+            width: 100%; max-width: 500px; padding: 12px 15px; display: flex; 
+            justify-content: space-between; align-items: center; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.15); gap: 10px;
+        }
+        .header-left { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1; flex: 1; min-width: 0; }
+        .logo-main { font-size: 1.6rem; letter-spacing: 0.5px; font-weight: 800; white-space: nowrap; }
+        .logo-sub { 
+            font-size: 0.75rem; opacity: 0.9; font-weight: 600; text-transform: uppercase; 
+            letter-spacing: 0.5px; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; display: block;
+        }
         
-        .stats-btn { background: rgba(255,255,255,0.25); border: 2px solid rgba(255,255,255,0.4); color: white; font-size: 1.2rem; width: 42px; height: 42px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; transition: all 0.2s; flex-shrink: 0; }
+        .header-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+        .stats-btn { 
+            background: rgba(255,255,255,0.25); border: 2px solid rgba(255,255,255,0.4); color: white; 
+            font-size: 1rem; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; 
+            backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; transition: all 0.2s; flex-shrink: 0; 
+        }
         .stats-btn:active { transform: scale(0.95); }
-        .round-indicator { background: rgba(255,255,255,0.25); padding: 8px 14px; border-radius: 20px; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-weight: 800; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap;}
+        .round-indicator { 
+            background: rgba(255,255,255,0.25); padding: 6px 12px; border-radius: 20px; backdrop-filter: blur(8px); 
+            border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-weight: 800; 
+            font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap;
+        }
 
         #mainGameArea { width: 100%; display: flex; flex-direction: column; align-items: center; }
-        .game-card { background: var(--glass-panel); width: 94%; max-width: 450px; border-radius: 28px; padding: 25px 25px 35px 25px; margin-bottom: 20px; margin-top: 10px; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,1); display: flex; flex-direction: column; align-items: center; }
+        .game-card { 
+            background: var(--glass-panel); width: 94%; max-width: 450px; border-radius: 28px; 
+            padding: 25px 25px 35px 25px; margin-bottom: 20px; margin-top: 10px; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,1); 
+            display: flex; flex-direction: column; align-items: center; 
+        }
         
-        /* SCORE BANNER */
         .score-banner { display: flex; width: 100%; max-width: 280px; background: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
         .score-box { flex: 1; padding: 12px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
         .score-divider { width: 1px; background: #e2e8f0; }
@@ -55,11 +85,11 @@
         .strength-meter-fill { height: 100%; width: 0%; background: #6366f1; border-radius: 5px; transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.4s; }
         .strength-meter-fill.maxed { background: linear-gradient(90deg, #10b981, #0ea5e9, #6366f1, #8b5cf6, #d946ef); background-size: 200% 200%; animation: gradientShift 2s ease infinite; }
 
-        /* GEOMETRIC SHAPE LAYOUTS */
         .shape-container { position: relative; width: 220px; height: 220px; margin: 10px auto 30px; transition: opacity 0.4s ease; }
         .shape-container.fade-out { opacity: 0; pointer-events: none; }
         .shape-tile { width: 66px; height: 74px; border-radius: 16px; position: absolute; background: linear-gradient(180deg, var(--tile-color-top) 0%, var(--tile-color-bottom) 100%); border: 1px solid var(--tile-border); color: var(--tile-text); font-size: 2.3rem; font-family: 'Varela Round', sans-serif; font-weight: 900; cursor: pointer; display: flex; align-items: center; justify-content: center; -webkit-tap-highlight-color: transparent; text-shadow: 0 1px 1px rgba(255,255,255,0.9), 0 -1px 1px rgba(0,0,0,0.1); box-shadow: 0 8px 0 var(--tile-shadow-3d), 0 15px 20px rgba(0,0,0,0.15), inset 0 2px 0 rgba(255,255,255,1); transform: translate(-50%, -50%); transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1), top 0.5s ease, left 0.5s ease; }
         .shape-tile:active, .shape-tile.active-sim { transform: translate(-50%, calc(-50% + 8px)) !important; box-shadow: 0 0px 0 var(--tile-shadow-3d), 0 5px 10px rgba(0,0,0,0.1), inset 0 2px 4px rgba(0,0,0,0.05); }
+
         .shape-triangle .tile-0 { top: 15%; left: 50%; } .shape-triangle .tile-1 { top: 85%; left: 15%; } .shape-triangle .tile-2 { top: 85%; left: 85%; }
         .shape-square .tile-0 { top: 20%; left: 20%; } .shape-square .tile-1 { top: 20%; left: 80%; } .shape-square .tile-2 { top: 80%; left: 20%; } .shape-square .tile-3 { top: 80%; left: 80%; }
         .shape-pentagon .tile-0 { top: 10%; left: 50%; } .shape-pentagon .tile-1 { top: 40%; left: 95%; } .shape-pentagon .tile-2 { top: 90%; left: 75%; } .shape-pentagon .tile-3 { top: 90%; left: 25%; } .shape-pentagon .tile-4 { top: 40%; left: 5%; }
@@ -133,7 +163,7 @@
         .ad-btn:active { transform: scale(0.95); box-shadow: none; }
         .apple-btn { background: #1e293b; } .google-btn { background: #10b981; }
 
-        /* CUSTOM ANIMATIONS */
+        /* CUSTOM ANIMATIONS (NO 3RD PARTY LIBRARIES) */
         @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
         @keyframes popIn { 0% { transform: scale(0.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
         @keyframes blink { 50% { opacity: 0; } }
@@ -142,10 +172,42 @@
         .mini-particle { position: fixed; font-size: 1.5rem; pointer-events: none; z-index: 1000; animation: mini-explode 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
         @keyframes mini-explode { 0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; } 100% { transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(1.2); opacity: 0; } }
         
+        /* MASSIVE SCREEN SHAKE */
+        @keyframes screen-shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        .shake-active { animation: screen-shake 0.5s cubic-bezier(.36,.07,.19,.97) both; }
+
+        /* MEGA CELEBRATION OVERLAY */
         .mega-celebration-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        
+        .mega-banner {
+            position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%) scale(0);
+            font-size: 2.5rem; font-weight: 900; color: #fff; text-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 40px #10b981, 0 0 80px #10b981;
+            white-space: nowrap; animation: banner-pop 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; z-index: 10001; font-family: 'Varela Round', sans-serif;
+        }
+        @keyframes banner-pop {
+            0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+            15% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+            25% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+            80% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
+        }
+
         .echo-ring { position: absolute; border: 8px solid rgba(99, 102, 241, 0.8); border-radius: 50%; width: 50px; height: 50px; opacity: 1; animation: echo-expand 1.5s cubic-bezier(0.1, 0.8, 0.3, 1) forwards; }
         @keyframes echo-expand { 0% { transform: scale(1); opacity: 1; border-width: 15px; } 100% { transform: scale(20); opacity: 0; border-width: 1px; } }
-        .mega-particle { position: absolute; font-size: 2.5rem; transform: translate(-50%, -50%); animation: particle-explode 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; }
+        
+        .mega-particle { position: absolute; transform: translate(-50%, -50%); animation: particle-explode 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; }
         @keyframes particle-explode { 0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; } 100% { transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(1.5); opacity: 0; } }
     </style>
 </head>
@@ -310,25 +372,26 @@
     <script>
         // --- 10 DAYS OF HAND-CURATED, SCRAMBLED PUZZLES (VOWELS FRONT-LOADED) ---
         const PUZZLE_DB = [
-            { id: 0, dayName: "SUNDAY", rounds: [{ letters: ["A", "E", "T"], agnesWord: "TEAT" }, { letters: ["O", "P", "L", "S"], agnesWord: "SPOOLS" }, { letters: ["E", "I", "C", "M", "N"], agnesWord: "MINCE" }] },
-            { id: 1, dayName: "MONDAY", rounds: [{ letters: ["O", "U", "T"], agnesWord: "TOUT" }, { letters: ["A", "E", "D", "R"], agnesWord: "READER" }, { letters: ["I", "C", "K", "L", "S"], agnesWord: "SLICKS" }] },
-            { id: 2, dayName: "TUESDAY", rounds: [{ letters: ["A", "R", "T"], agnesWord: "TARTAR" }, { letters: ["E", "I", "L", "N"], agnesWord: "LINEN" }, { letters: ["E", "O", "C", "P", "S"], agnesWord: "SCOOPS" }] },
-            { id: 3, dayName: "WEDNESDAY", rounds: [{ letters: ["E", "O", "R"], agnesWord: "ERROR" }, { letters: ["A", "M", "S", "T"], agnesWord: "SMARTS" }, { letters: ["I", "B", "D", "L", "N"], agnesWord: "BLIND" }] },
-            { id: 4, dayName: "THURSDAY", rounds: [{ letters: ["I", "N", "T"], agnesWord: "TINT" }, { letters: ["A", "E", "C", "R"], agnesWord: "CAREER" }, { letters: ["O", "U", "H", "S", "T"], agnesWord: "SHOUTS" }] },
-            { id: 5, dayName: "FRIDAY", rounds: [{ letters: ["E", "P", "S"], agnesWord: "PEEPS" }, { letters: ["A", "P", "R", "T"], agnesWord: "APART" }, { letters: ["O", "C", "F", "K", "L"], agnesWord: "FLOCK" }] },
-            { id: 6, dayName: "SATURDAY", rounds: [{ letters: ["A", "L", "T"], agnesWord: "TALL" }, { letters: ["E", "O", "M", "R"], agnesWord: "ROOMER" }, { letters: ["A", "D", "N", "S", "T"], agnesWord: "STANDS" }] },
-            { id: 7, dayName: "SUNDAY", rounds: [{ letters: ["O", "N", "T"], agnesWord: "ONTO" }, { letters: ["A", "E", "B", "R"], agnesWord: "BARBER" }, { letters: ["E", "I", "C", "P", "S"], agnesWord: "SPICES" }] },
-            { id: 8, dayName: "MONDAY", rounds: [{ letters: ["A", "C", "T"], agnesWord: "TACT" }, { letters: ["E", "O", "H", "S"], agnesWord: "SHOES" }, { letters: ["I", "B", "G", "N", "R"], agnesWord: "BRING" }] },
-            { id: 9, dayName: "TUESDAY", rounds: [{ letters: ["E", "R", "V"], agnesWord: "EVER" }, { letters: ["A", "L", "S", "T"], agnesWord: "SALTS" }, { letters: ["O", "C", "N", "R", "W"], agnesWord: "CROWN" }] }
+            { id: 0, rounds: [{ letters: ["E", "S", "T"], agnesWord: "SETTEES" }, { letters: ["I", "M", "P", "S"], agnesWord: "MISSISSIPPI" }, { letters: ["E", "U", "C", "F", "S"], agnesWord: "SUCCESSFUL" }] },
+            { id: 1, rounds: [{ letters: ["A", "O", "B"], agnesWord: "BAOBAB" }, { letters: ["A", "E", "P", "R"], agnesWord: "PREPARE" }, { letters: ["A", "E", "C", "L", "S"], agnesWord: "SCALELESS" }] },
+            { id: 2, rounds: [{ letters: ["O", "I", "N"], agnesWord: "ONION" }, { letters: ["E", "O", "P", "S"], agnesWord: "POSSESSES" }, { letters: ["A", "E", "D", "R", "S"], agnesWord: "ADDRESSES" }] },
+            { id: 3, rounds: [{ letters: ["E", "R", "V"], agnesWord: "REVERE" }, { letters: ["E", "D", "F", "N"], agnesWord: "DEFENDED" }, { letters: ["O", "U", "C", "L", "S"], agnesWord: "COLOSSUS" }] },
+            { id: 4, rounds: [{ letters: ["A", "P", "Y"], agnesWord: "PAPAYA" }, { letters: ["E", "I", "R", "T"], agnesWord: "RETIREE" }, { letters: ["E", "I", "R", "T", "V"], agnesWord: "RETRIEVER" }] },
+            { id: 5, rounds: [{ letters: ["E", "F", "R"], agnesWord: "REFEREE" }, { letters: ["A", "E", "B", "G"], agnesWord: "BAGGAGE" }, { letters: ["A", "O", "B", "L", "N"], agnesWord: "BALLOON" }] },
+            { id: 6, rounds: [{ letters: ["O", "D", "V"], agnesWord: "VOODOO" }, { letters: ["E", "O", "C", "F"], agnesWord: "COFFEE" }, { letters: ["E", "I", "C", "N", "S"], agnesWord: "INCENSES" }] },
+            { id: 7, rounds: [{ letters: ["A", "R", "T"], agnesWord: "TARTAR" }, { letters: ["E", "I", "D", "V"], agnesWord: "DIVIDED" }, { letters: ["A", "O", "B", "N", "S"], agnesWord: "BABOONS" }] },
+            { id: 8, rounds: [{ letters: ["E", "H", "T"], agnesWord: "TEETH" }, { letters: ["E", "O", "G", "S"], agnesWord: "GOOSES" }, { letters: ["E", "I", "N", "S", "T"], agnesWord: "INTESTINES" }] },
+            { id: 9, rounds: [{ letters: ["U", "C", "S"], agnesWord: "CUSCUS" }, { letters: ["E", "O", "M", "R"], agnesWord: "ROOMER" }, { letters: ["A", "E", "L", "P", "T"], agnesWord: "PALPATE" }] }
         ];
 
         const MAX_ROUNDS = 3;
-        const STATS_KEY = 'echoes_agnes_stats_v26';
+        const STATS_KEY = 'echoes_agnes_stats_v29';
         
         let currentDayIndex = 0; let currentRound = 0; let currentInput = ""; 
         let attempts = []; let dailyData = PUZZLE_DB[0];
         let FULL_DICTIONARY = []; let currentValidSet = new Set();
         let currentMaxLen = 0; let toastTimeout;
+        let isSubmitting = false;
 
         window.onload = () => {
             fetch('https://raw.githubusercontent.com/jesstess/Scrabble/master/scrabble/sowpods.txt')
@@ -338,16 +401,40 @@
                     document.getElementById('loadingScreen').style.opacity = '0';
                     setTimeout(() => {
                         document.getElementById('loadingScreen').style.display = 'none';
-                        document.getElementById('introModal').classList.remove('hidden');
                         init();
                     }, 500);
                 })
                 .catch(() => alert("Failed to connect to Dictionary Corner! Please check internet."));
         };
 
+        function getTodayStr() {
+            return new Date().toISOString().split('T')[0];
+        }
+
         function init() { 
-            const todayIndex = new Date().getUTCDay();
-            loadDay(todayIndex); setupKeyboard();
+            const epoch = new Date('2024-01-01T00:00:00Z').getTime();
+            const daysElapsed = Math.floor((Date.now() - epoch) / 86400000);
+            const todayIndex = daysElapsed % PUZZLE_DB.length;
+            
+            const lastPlay = JSON.parse(localStorage.getItem('echoes_last_play') || '{}');
+            if (lastPlay.date === getTodayStr()) {
+                currentDayIndex = todayIndex;
+                dailyData = PUZZLE_DB[todayIndex];
+                
+                const realDayName = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toUpperCase();
+                dailyData.dynamicDayName = realDayName;
+                
+                attempts = lastPlay.attempts;
+                precalculateDailyTarget();
+                document.getElementById('dayIndicator').innerText = dailyData.dynamicDayName;
+                document.getElementById('headerDayLabel').innerText = dailyData.dynamicDayName;
+                endGame(true); 
+            } else {
+                document.getElementById('introModal').classList.remove('hidden');
+                loadDay(todayIndex); 
+            }
+            
+            setupKeyboard();
         }
 
         function toggleDev() { document.getElementById('devPanel').classList.toggle('collapsed'); }
@@ -368,7 +455,7 @@
                 document.getElementById('tutSuccess').style.display = "block";
                 const btn = document.getElementById('tutStartBtn'); btn.style.opacity = "1"; btn.style.pointerEvents = "auto";
                 btn.innerText = "Start The Show!"; btn.style.background = "linear-gradient(135deg, #10b981 0%, #059669 100%)";
-                popMiniParticles(4, true);
+                popMiniParticles(10, true);
             } else if (tutInputStr.length === 4) {
                 el.classList.add('invalid'); setTimeout(() => el.classList.remove('invalid'), 400);
             }
@@ -391,12 +478,27 @@
             document.getElementById('cheatModal').classList.remove('hidden');
         }
 
-        function getStats() { return JSON.parse(localStorage.getItem(STATS_KEY)) || { played:0, streak:0, maxStreak:0, bestWord:0 }; }
-        function saveGameStats(finalLen) {
-            let s = getStats(); s.played++; s.streak++; 
-            if (s.streak > s.maxStreak) s.maxStreak = s.streak;
+        function getStats() { 
+            let stats = JSON.parse(localStorage.getItem(STATS_KEY));
+            if (!stats) stats = { played:0, streak:0, maxStreak:0, bestWord:0 };
+            return stats; 
+        }
+
+        function saveGameStats(finalLen, won) {
+            let s = getStats(); s.played++; 
+            if (won) {
+                s.streak++; 
+                if (s.streak > s.maxStreak) s.maxStreak = s.streak;
+            } else {
+                s.streak = 0; 
+            }
             if (finalLen > s.bestWord) s.bestWord = finalLen;
             localStorage.setItem(STATS_KEY, JSON.stringify(s));
+            
+            localStorage.setItem('echoes_last_play', JSON.stringify({
+                date: getTodayStr(),
+                attempts: attempts
+            }));
         }
 
         function precalculateDailyTarget() {
@@ -406,20 +508,30 @@
             document.getElementById('dailyTargetDisplay').innerText = dailyData.targetScore;
         }
 
-        function loadDay(idx) {
+        function loadDay(idx, isDevOverride = false) {
             if(idx < 0) idx = PUZZLE_DB.length - 1; if(idx >= PUZZLE_DB.length) idx = 0;
             currentDayIndex = idx; dailyData = PUZZLE_DB[idx];
-            document.getElementById('dayIndicator').innerText = dailyData.dayName;
-            document.getElementById('headerDayLabel').innerText = dailyData.dayName;
-            precalculateDailyTarget(); resetGameState();
+            
+            const realDayName = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toUpperCase();
+            const displayName = isDevOverride ? `PUZZLE ${idx + 1}` : realDayName;
+            dailyData.dynamicDayName = displayName;
+
+            document.getElementById('dayIndicator').innerText = displayName;
+            document.getElementById('headerDayLabel').innerText = displayName;
+            precalculateDailyTarget(); 
+            
+            if (isDevOverride) {
+                localStorage.removeItem('echoes_last_play');
+            }
+            resetGameState();
         }
 
-        function prevDay() { loadDay(currentDayIndex - 1); }
-        function nextDay() { loadDay(currentDayIndex + 1); }
-        function resetDay() { loadDay(currentDayIndex); }
+        function prevDay() { loadDay(currentDayIndex - 1, true); }
+        function nextDay() { loadDay(currentDayIndex + 1, true); }
+        function resetDay() { loadDay(currentDayIndex, true); }
 
         function resetGameState() {
-            currentRound = 0; attempts = [];
+            currentRound = 0; attempts = []; isSubmitting = false;
             document.getElementById('currentTotalScore').innerText = "0";
             document.getElementById('mainGameArea').classList.remove('hidden');
             document.getElementById('fullScreenAd').classList.add('hidden');
@@ -432,8 +544,10 @@
 
         function loadRound(idx) {
             currentInput = ""; const rData = dailyData.rounds[idx];
-            const regex = new RegExp('^[' + rData.letters.join('').toLowerCase() + ']+$');
-            const matched = FULL_DICTIONARY.filter(w => regex.test(w));
+            
+            const allowedSet = new Set(rData.letters.map(l => l.toLowerCase()));
+            const matched = FULL_DICTIONARY.filter(w => [...w].every(c => allowedSet.has(c)));
+            
             currentValidSet = new Set(matched);
             currentMaxLen = rData.agnesWord.length;
 
@@ -454,7 +568,7 @@
         }
 
         function typeChar(c) {
-            if (currentRound >= MAX_ROUNDS) return;
+            if (currentRound >= MAX_ROUNDS || isSubmitting) return;
             currentInput += c;
             document.querySelectorAll('.shape-tile').forEach(b => {
                 if (b.getAttribute('data-val') === c) {
@@ -464,7 +578,7 @@
             updateDisplay();
         }
 
-        function deleteChar() { if (currentInput.length === 0) return; currentInput = currentInput.slice(0, -1); updateDisplay(); }
+        function deleteChar() { if (currentInput.length === 0 || isSubmitting) return; currentInput = currentInput.slice(0, -1); updateDisplay(); }
 
         function updateDisplay() {
             document.getElementById('currentWord').innerText = currentInput;
@@ -508,9 +622,16 @@
         }
 
         function triggerMassiveCelebration() {
+            document.body.classList.add('shake-active');
+            setTimeout(() => document.body.classList.remove('shake-active'), 500);
+
             const overlay = document.createElement('div');
             overlay.className = 'mega-celebration-overlay';
-            document.body.appendChild(overlay);
+            
+            const banner = document.createElement('div');
+            banner.className = 'mega-banner';
+            banner.innerText = '🏆 TARGET SMASHED! 🏆';
+            overlay.appendChild(banner);
 
             for(let i=0; i<3; i++) {
                 setTimeout(() => {
@@ -520,31 +641,34 @@
                 }, i * 400);
             }
 
-            const emojis = ['🌟', '💥', '🏆', '🔥', '✨'];
-            for(let i=0; i<40; i++) {
+            const emojis = ['🌟', '💥', '🏆', '🔥', '✨', '💎', '🎉'];
+            for(let i=0; i<80; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'mega-particle';
                 particle.innerText = emojis[Math.floor(Math.random() * emojis.length)];
                 
                 const angle = Math.random() * Math.PI * 2;
-                const velocity = 100 + Math.random() * 250;
+                const velocity = 200 + Math.random() * 400;
                 particle.style.setProperty('--tx', `${Math.cos(angle) * velocity}px`);
                 particle.style.setProperty('--ty', `${Math.sin(angle) * velocity}px`);
-                particle.style.left = '50%'; particle.style.top = '40%';
-                particle.style.animationDelay = `${Math.random() * 0.2}s`;
+                particle.style.left = '50%'; particle.style.top = '50%';
+                particle.style.fontSize = `${1 + Math.random() * 2}rem`;
+                particle.style.animationDelay = `${Math.random() * 0.15}s`;
                 
                 overlay.appendChild(particle);
             }
 
-            setTimeout(() => { if (document.body.contains(overlay)) overlay.remove(); }, 3000);
+            document.body.appendChild(overlay);
+            setTimeout(() => { if (document.body.contains(overlay)) overlay.remove(); }, 4000);
         }
 
         function submitWord() {
-            if (currentRound >= MAX_ROUNDS) return;
+            if (currentRound >= MAX_ROUNDS || isSubmitting) return;
             const w = currentInput.toLowerCase(); const box = document.getElementById('inputDisplay');
             if (w.length < 3 || !currentValidSet.has(w)) {
                 box.classList.add('invalid'); setTimeout(() => box.classList.remove('invalid'), 400); return;
             }
+            isSubmitting = true;
             box.classList.add('valid');
             popMiniParticles(w.length);
 
@@ -556,9 +680,15 @@
             renderHistory();
             if(attempts.length === 1) document.getElementById('dictHint').style.display = 'block'; 
 
+            if (currentRound + 1 < MAX_ROUNDS) {
+                showToast("Stage Complete! ✅", "👍");
+            }
+
             setTimeout(() => {
                 currentRound++;
-                if (currentRound >= MAX_ROUNDS) endGame(); else loadRound(currentRound);
+                if (currentRound >= MAX_ROUNDS) endGame(false); 
+                else loadRound(currentRound);
+                isSubmitting = false;
             }, 800);
         }
 
@@ -578,12 +708,13 @@
 
         function setupKeyboard() {
             document.addEventListener('keydown', (e) => {
-                if (document.querySelector('.modal-overlay:not(.hidden)')) {
-                    if (!document.getElementById('introModal').classList.contains('hidden')) {
-                        if (e.key === 'Backspace') tutDel(); else if (['T','E','S'].includes(e.key.toUpperCase())) tutType(e.key.toUpperCase());
-                    }
+                const introModal = document.getElementById('introModal');
+                if (!introModal.classList.contains('hidden')) {
+                    if (e.key === 'Backspace') tutDel(); else if (['T','E','S'].includes(e.key.toUpperCase())) tutType(e.key.toUpperCase());
                     return; 
                 }
+                if (document.querySelector('.modal-overlay:not(.hidden)')) return;
+
                 if (e.key === 'Backspace') {
                     e.preventDefault(); document.getElementById('btnDel').classList.add('active-sim'); deleteChar();
                     setTimeout(() => document.getElementById('btnDel').classList.remove('active-sim'), 100);
@@ -614,18 +745,19 @@
             }
         }
 
-        function endGame() {
+        function endGame(isReplay = false) {
             document.getElementById('submitBtn').disabled = true; document.getElementById('submitBtn').innerText = "DONE";
             const totalScore = attempts.reduce((sum, a) => sum + a.len, 0);
             const target = dailyData.targetScore;
             
-            saveGameStats(totalScore);
+            if (!isReplay) saveGameStats(totalScore, totalScore >= target);
+            
             document.getElementById('finalScore').innerText = totalScore; 
             document.getElementById('finalRank').innerText = `Target: ${target} pts`;
             
             if (totalScore >= target) {
                 document.getElementById('endGameTitle').innerText = "Target Achieved! 🏆";
-                triggerMassiveCelebration();
+                if (!isReplay) triggerMassiveCelebration();
             } else {
                 document.getElementById('endGameTitle').innerText = "Close One! 😅";
             }
@@ -637,6 +769,8 @@
                 const bW = bWord ? bWord.toUpperCase() : '---'; const bL = bWord ? bWord.length : 0;
                 cc.innerHTML += `<div class="comp-row"><div class="comp-stage">S${i+1}</div><div class="comp-player">${pW} <span style="font-size:0.75rem;color:#94a3b8;">(${pL})</span></div><div class="comp-best">${bW} <span style="font-size:0.75rem;color:#10b981;opacity:0.8;">(${bL})</span></div></div>`;
             }
+            
+            document.getElementById('mainGameArea').classList.add('hidden');
             setTimeout(() => document.getElementById('gameOverModal').classList.remove('hidden'), 800);
         }
 
@@ -652,6 +786,20 @@
             document.getElementById('statsModal').classList.remove('hidden');
         }
 
+        function fallbackCopyTextToClipboard(text) {
+            var textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.top = "0"; textArea.style.left = "0"; textArea.style.position = "fixed";
+            document.body.appendChild(textArea);
+            textArea.focus(); textArea.select();
+            try {
+                document.execCommand('copy'); showToast("Result copied! Paste it to challenge friends.", "📋");
+            } catch (err) {
+                showToast("Oops, unable to copy. Please copy manually.", "❌");
+            }
+            document.body.removeChild(textArea);
+        }
+
         function shareResult() {
             let txt = "";
             attempts.forEach((a, i) => {
@@ -663,8 +811,12 @@
             
             const totalScore = attempts.reduce((sum, a) => sum + a.len, 0);
             const targetStr = totalScore >= dailyData.targetScore ? "🏆 Target Achieved!" : "😅 Missed Target";
+            const shareText = `Echoes with Agnes T-V 🎙️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://yourgame.com`;
             
-            navigator.clipboard.writeText(`Echoes with Agnes T-V 🎙️\n${dailyData.dayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://yourgame.com`).then(() => showToast("Result copied! Paste it to challenge friends.", "📋"));
+            if (!navigator.clipboard) { fallbackCopyTextToClipboard(shareText); return; }
+            navigator.clipboard.writeText(shareText)
+                .then(() => showToast("Result copied! Paste it to challenge friends.", "📋"))
+                .catch(() => fallbackCopyTextToClipboard(shareText));
         }
 
         function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
