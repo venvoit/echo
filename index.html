@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Echoes with Agnes T-V</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <style>
         :root {
             --bg-gradient: linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #8b5cf6 100%);
@@ -22,20 +21,21 @@
         .spinner { width: 50px; height: 50px; border: 5px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: white; animation: spin 1s ease-in-out infinite; margin-bottom: 20px; }
         @keyframes spin { to { transform: rotate(360deg); } }
 
-        /* BULLETPROOF MOBILE HEADER */
-        header { width: 100%; max-width: 500px; padding: 12px 15px; display: flex; justify-content: space-between; align-items: center; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.15); gap: 10px; }
-        .header-left { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1; flex: 1; min-width: 0; }
-        .logo-main { font-size: 1.6rem; letter-spacing: 0.5px; font-weight: 800; white-space: nowrap; }
-        .logo-sub { font-size: 0.75rem; opacity: 0.9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; display: block;}
+        /* FIXED HEADER FOR MOBILE */
+        header { width: 100%; max-width: 500px; padding: 15px 20px; display: flex; justify-content: space-between; align-items: flex-start; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.15); gap: 10px; }
+        .header-left { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.1; }
+        .logo-main { font-size: 1.8rem; letter-spacing: 0.5px; font-weight: 800; white-space: nowrap; }
+        .logo-sub { font-size: 0.8rem; opacity: 0.9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;}
+        .header-right { display: flex; align-items: center; gap: 10px; }
         
-        .header-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
-        .stats-btn { background: rgba(255,255,255,0.25); border: 2px solid rgba(255,255,255,0.4); color: white; font-size: 1rem; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; transition: all 0.2s; flex-shrink: 0; }
+        .stats-btn { background: rgba(255,255,255,0.25); border: 2px solid rgba(255,255,255,0.4); color: white; font-size: 1.2rem; width: 42px; height: 42px; border-radius: 50%; cursor: pointer; backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; transition: all 0.2s; flex-shrink: 0; }
         .stats-btn:active { transform: scale(0.95); }
-        .round-indicator { background: rgba(255,255,255,0.25); padding: 6px 12px; border-radius: 20px; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-weight: 800; font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap;}
+        .round-indicator { background: rgba(255,255,255,0.25); padding: 8px 14px; border-radius: 20px; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-weight: 800; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap;}
 
         #mainGameArea { width: 100%; display: flex; flex-direction: column; align-items: center; }
         .game-card { background: var(--glass-panel); width: 94%; max-width: 450px; border-radius: 28px; padding: 25px 25px 35px 25px; margin-bottom: 20px; margin-top: 10px; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,1); display: flex; flex-direction: column; align-items: center; }
         
+        /* SCORE BANNER */
         .score-banner { display: flex; width: 100%; max-width: 280px; background: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
         .score-box { flex: 1; padding: 12px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
         .score-divider { width: 1px; background: #e2e8f0; }
@@ -55,6 +55,7 @@
         .strength-meter-fill { height: 100%; width: 0%; background: #6366f1; border-radius: 5px; transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.4s; }
         .strength-meter-fill.maxed { background: linear-gradient(90deg, #10b981, #0ea5e9, #6366f1, #8b5cf6, #d946ef); background-size: 200% 200%; animation: gradientShift 2s ease infinite; }
 
+        /* GEOMETRIC SHAPE LAYOUTS */
         .shape-container { position: relative; width: 220px; height: 220px; margin: 10px auto 30px; transition: opacity 0.4s ease; }
         .shape-container.fade-out { opacity: 0; pointer-events: none; }
         .shape-tile { width: 66px; height: 74px; border-radius: 16px; position: absolute; background: linear-gradient(180deg, var(--tile-color-top) 0%, var(--tile-color-bottom) 100%); border: 1px solid var(--tile-border); color: var(--tile-text); font-size: 2.3rem; font-family: 'Varela Round', sans-serif; font-weight: 900; cursor: pointer; display: flex; align-items: center; justify-content: center; -webkit-tap-highlight-color: transparent; text-shadow: 0 1px 1px rgba(255,255,255,0.9), 0 -1px 1px rgba(0,0,0,0.1); box-shadow: 0 8px 0 var(--tile-shadow-3d), 0 15px 20px rgba(0,0,0,0.15), inset 0 2px 0 rgba(255,255,255,1); transform: translate(-50%, -50%); transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1), top 0.5s ease, left 0.5s ease; }
@@ -132,10 +133,20 @@
         .ad-btn:active { transform: scale(0.95); box-shadow: none; }
         .apple-btn { background: #1e293b; } .google-btn { background: #10b981; }
 
+        /* CUSTOM ANIMATIONS */
         @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
         @keyframes popIn { 0% { transform: scale(0.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
         @keyframes blink { 50% { opacity: 0; } }
         @keyframes gradientShift { 0% { background-position: 0% 50%;} 50% { background-position: 100% 50%;} 100% { background-position: 0% 50%;} }
+        
+        .mini-particle { position: fixed; font-size: 1.5rem; pointer-events: none; z-index: 1000; animation: mini-explode 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+        @keyframes mini-explode { 0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; } 100% { transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(1.2); opacity: 0; } }
+        
+        .mega-celebration-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .echo-ring { position: absolute; border: 8px solid rgba(99, 102, 241, 0.8); border-radius: 50%; width: 50px; height: 50px; opacity: 1; animation: echo-expand 1.5s cubic-bezier(0.1, 0.8, 0.3, 1) forwards; }
+        @keyframes echo-expand { 0% { transform: scale(1); opacity: 1; border-width: 15px; } 100% { transform: scale(20); opacity: 0; border-width: 1px; } }
+        .mega-particle { position: absolute; font-size: 2.5rem; transform: translate(-50%, -50%); animation: particle-explode 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; }
+        @keyframes particle-explode { 0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; } 100% { transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(1.5); opacity: 0; } }
     </style>
 </head>
 <body>
@@ -143,7 +154,7 @@
     <div id="loadingScreen">
         <div class="spinner"></div>
         <h2 style="margin:0; font-weight: 800;">Consulting Dictionary...</h2>
-        <p style="opacity: 0.8; font-size: 0.9rem;">Loading official Scrabble database & Daily Puzzles</p>
+        <p style="opacity: 0.8; font-size: 0.9rem;">Loading official UK Scrabble database</p>
     </div>
 
     <div id="toast" class="toast-container"><span id="toastIcon">⚠️</span><span id="toastMessage">Message</span></div>
@@ -177,7 +188,7 @@
             <div class="input-display" id="inputDisplay"><span id="currentWord"></span><span class="cursor"></span></div>
             
             <div class="meter-wrapper">
-                <div class="meter-labels"><span>Strength</span><span>Max Possible</span></div>
+                <div class="meter-labels"><span>Strength</span><span>Target Length</span></div>
                 <div class="strength-meter-bg"><div class="strength-meter-fill" id="meterFill"></div></div>
             </div>
             
@@ -230,7 +241,7 @@
         <div class="modal">
             <h2>The Golden Rule 🌟</h2>
             <p style="color:#64748b; font-size: 0.95rem; margin-bottom: 10px; line-height: 1.4;">In Echoes, you can use the same tile <strong>as many times as you want!</strong><br>Beat all 3 stages by hitting the combined points target.</p>
-            <p style="color:#334155; font-weight: 700; margin-bottom: 5px;">Prove it! Spell <span style="color:#6366f1; font-weight:800; font-size: 1.1rem;">TEST</span> using only these 3 tiles:</p>
+            <p style="color:#334155; font-weight: 700; margin-bottom: 5px;">Try it! Spell <span style="color:#6366f1; font-weight:800; font-size: 1.1rem;">TEST</span> using only these 3 tiles:</p>
             <div class="tut-board">
                 <div class="tut-input" id="tutInput"></div>
                 <div class="tut-tiles">
@@ -266,7 +277,7 @@
             <div class="big-rank" id="finalScore">0</div>
             <div style="font-size: 1.1rem; color: #4f46e5; font-weight:800; margin-bottom: 20px;" id="finalRank">Target: 0</div>
             <div class="comparison-container">
-                <div class="comp-label"><span style="width:40px;"></span><span style="flex:1; text-align:center;">You</span><span style="flex:1; text-align:center; color:#10b981;">Max Points</span></div>
+                <div class="comp-label"><span style="width:40px;"></span><span style="flex:1; text-align:center;">You</span><span style="flex:1; text-align:center; color:#10b981;">Agnes's Target</span></div>
                 <div id="endGameComparison"></div>
             </div>
             <button class="control-btn btn-submit" style="width:100%; margin-bottom: 12px;" onclick="shareResult()">Share Score 📤</button>
@@ -297,48 +308,46 @@
     </div>
 
     <script>
-        const MAX_ROUNDS = 3;
-        const STATS_KEY = 'echoes_agnes_stats_v23';
-        
-        let PUZZLE_DB = [];
-        let FULL_DICTIONARY = []; 
-        let currentDayIndex = 0; let currentRound = 0; let currentInput = ""; 
-        let attempts = []; let dailyData = null;
-        let currentValidSet = new Set(); let currentMaxLen = 0; let toastTimeout;
+        // --- 10 DAYS OF HAND-CURATED, SCRAMBLED PUZZLES (VOWELS FRONT-LOADED) ---
+        const PUZZLE_DB = [
+            { id: 0, dayName: "SUNDAY", rounds: [{ letters: ["A", "E", "T"], agnesWord: "TEAT" }, { letters: ["O", "P", "L", "S"], agnesWord: "SPOOLS" }, { letters: ["E", "I", "C", "M", "N"], agnesWord: "MINCE" }] },
+            { id: 1, dayName: "MONDAY", rounds: [{ letters: ["O", "U", "T"], agnesWord: "TOUT" }, { letters: ["A", "E", "D", "R"], agnesWord: "READER" }, { letters: ["I", "C", "K", "L", "S"], agnesWord: "SLICKS" }] },
+            { id: 2, dayName: "TUESDAY", rounds: [{ letters: ["A", "R", "T"], agnesWord: "TARTAR" }, { letters: ["E", "I", "L", "N"], agnesWord: "LINEN" }, { letters: ["E", "O", "C", "P", "S"], agnesWord: "SCOOPS" }] },
+            { id: 3, dayName: "WEDNESDAY", rounds: [{ letters: ["E", "O", "R"], agnesWord: "ERROR" }, { letters: ["A", "M", "S", "T"], agnesWord: "SMARTS" }, { letters: ["I", "B", "D", "L", "N"], agnesWord: "BLIND" }] },
+            { id: 4, dayName: "THURSDAY", rounds: [{ letters: ["I", "N", "T"], agnesWord: "TINT" }, { letters: ["A", "E", "C", "R"], agnesWord: "CAREER" }, { letters: ["O", "U", "H", "S", "T"], agnesWord: "SHOUTS" }] },
+            { id: 5, dayName: "FRIDAY", rounds: [{ letters: ["E", "P", "S"], agnesWord: "PEEPS" }, { letters: ["A", "P", "R", "T"], agnesWord: "APART" }, { letters: ["O", "C", "F", "K", "L"], agnesWord: "FLOCK" }] },
+            { id: 6, dayName: "SATURDAY", rounds: [{ letters: ["A", "L", "T"], agnesWord: "TALL" }, { letters: ["E", "O", "M", "R"], agnesWord: "ROOMER" }, { letters: ["A", "D", "N", "S", "T"], agnesWord: "STANDS" }] },
+            { id: 7, dayName: "SUNDAY", rounds: [{ letters: ["O", "N", "T"], agnesWord: "ONTO" }, { letters: ["A", "E", "B", "R"], agnesWord: "BARBER" }, { letters: ["E", "I", "C", "P", "S"], agnesWord: "SPICES" }] },
+            { id: 8, dayName: "MONDAY", rounds: [{ letters: ["A", "C", "T"], agnesWord: "TACT" }, { letters: ["E", "O", "H", "S"], agnesWord: "SHOES" }, { letters: ["I", "B", "G", "N", "R"], agnesWord: "BRING" }] },
+            { id: 9, dayName: "TUESDAY", rounds: [{ letters: ["E", "R", "V"], agnesWord: "EVER" }, { letters: ["A", "L", "S", "T"], agnesWord: "SALTS" }, { letters: ["O", "C", "N", "R", "W"], agnesWord: "CROWN" }] }
+        ];
 
-        // FETCH BOTH FILES ON LOAD
+        const MAX_ROUNDS = 3;
+        const STATS_KEY = 'echoes_agnes_stats_v26';
+        
+        let currentDayIndex = 0; let currentRound = 0; let currentInput = ""; 
+        let attempts = []; let dailyData = PUZZLE_DB[0];
+        let FULL_DICTIONARY = []; let currentValidSet = new Set();
+        let currentMaxLen = 0; let toastTimeout;
+
         window.onload = () => {
-            Promise.all([
-                fetch('puzzles.json').then(r => r.json()),
-                fetch('https://raw.githubusercontent.com/jesstess/Scrabble/master/scrabble/sowpods.txt').then(r => r.text())
-            ])
-            .then(([puzzlesData, dictText]) => {
-                PUZZLE_DB = puzzlesData;
-                FULL_DICTIONARY = dictText.split('\n').map(w => w.trim().toLowerCase()).filter(w => w.length >= 3);
-                
-                document.getElementById('loadingScreen').style.opacity = '0';
-                setTimeout(() => {
-                    document.getElementById('loadingScreen').style.display = 'none';
-                    document.getElementById('introModal').classList.remove('hidden');
-                    init();
-                }, 500);
-            })
-            .catch(err => {
-                alert("Failed to load game data! Ensure 'puzzles.json' is in the same folder and you have an internet connection.");
-                console.error(err);
-            });
+            fetch('https://raw.githubusercontent.com/jesstess/Scrabble/master/scrabble/sowpods.txt')
+                .then(r => r.text())
+                .then(text => {
+                    FULL_DICTIONARY = text.split('\n').map(w => w.trim().toLowerCase()).filter(w => w.length >= 3);
+                    document.getElementById('loadingScreen').style.opacity = '0';
+                    setTimeout(() => {
+                        document.getElementById('loadingScreen').style.display = 'none';
+                        document.getElementById('introModal').classList.remove('hidden');
+                        init();
+                    }, 500);
+                })
+                .catch(() => alert("Failed to connect to Dictionary Corner! Please check internet."));
         };
 
         function init() { 
-            // Calculate Day of the Year to pick from 365 puzzles
-            const now = new Date();
-            const start = new Date(now.getFullYear(), 0, 0);
-            const diff = now - start;
-            const oneDay = 1000 * 60 * 60 * 24;
-            const dayOfYear = Math.floor(diff / oneDay) - 1; 
-            
-            loadDay(dayOfYear); 
-            setupKeyboard();
+            const todayIndex = new Date().getUTCDay();
+            loadDay(todayIndex); setupKeyboard();
         }
 
         function toggleDev() { document.getElementById('devPanel').classList.toggle('collapsed'); }
@@ -359,7 +368,7 @@
                 document.getElementById('tutSuccess').style.display = "block";
                 const btn = document.getElementById('tutStartBtn'); btn.style.opacity = "1"; btn.style.pointerEvents = "auto";
                 btn.innerText = "Start The Show!"; btn.style.background = "linear-gradient(135deg, #10b981 0%, #059669 100%)";
-                confetti({ particleCount: 80, spread: 60, origin: { y: 0.6 } });
+                popMiniParticles(4, true);
             } else if (tutInputStr.length === 4) {
                 el.classList.add('invalid'); setTimeout(() => el.classList.remove('invalid'), 400);
             }
@@ -392,28 +401,17 @@
 
         function precalculateDailyTarget() {
             let totalMax = 0;
-            dailyData.rounds.forEach(r => {
-                const regex = new RegExp('^[' + r.letters.join('').toLowerCase() + ']+$');
-                const matched = FULL_DICTIONARY.filter(w => regex.test(w));
-                r.liveLongestWord = matched.reduce((l, c) => c.length > l.length ? c : l, "");
-                totalMax += r.liveLongestWord.length;
-            });
-            dailyData.maxPossibleScore = totalMax;
+            dailyData.rounds.forEach(r => { totalMax += r.agnesWord.length; });
             dailyData.targetScore = Math.max(1, totalMax - 5);
             document.getElementById('dailyTargetDisplay').innerText = dailyData.targetScore;
         }
 
         function loadDay(idx) {
-            if(idx < 0) idx = PUZZLE_DB.length - 1; 
-            if(idx >= PUZZLE_DB.length) idx = 0;
-            currentDayIndex = idx; 
-            dailyData = PUZZLE_DB[idx];
-            
-            document.getElementById('dayIndicator').innerText = dailyData.dayName || `DAY ${idx+1}`;
-            document.getElementById('headerDayLabel').innerText = dailyData.dayName || `DAY ${idx+1}`;
-            
-            precalculateDailyTarget();
-            resetGameState();
+            if(idx < 0) idx = PUZZLE_DB.length - 1; if(idx >= PUZZLE_DB.length) idx = 0;
+            currentDayIndex = idx; dailyData = PUZZLE_DB[idx];
+            document.getElementById('dayIndicator').innerText = dailyData.dayName;
+            document.getElementById('headerDayLabel').innerText = dailyData.dayName;
+            precalculateDailyTarget(); resetGameState();
         }
 
         function prevDay() { loadDay(currentDayIndex - 1); }
@@ -437,7 +435,7 @@
             const regex = new RegExp('^[' + rData.letters.join('').toLowerCase() + ']+$');
             const matched = FULL_DICTIONARY.filter(w => regex.test(w));
             currentValidSet = new Set(matched);
-            currentMaxLen = rData.liveLongestWord.length;
+            currentMaxLen = rData.agnesWord.length;
 
             document.getElementById('roundIndicator').innerText = `STAGE ${idx + 1}/3`;
             const grid = document.getElementById('lettersGrid'); grid.classList.add('fade-out');
@@ -480,7 +478,65 @@
             let pct = currentMaxLen > 0 ? (currentInput.length / currentMaxLen) * 100 : 0;
             if (pct > 100) pct = 100;
             fill.style.width = `${pct}%`;
-            if (pct === 100) fill.classList.add('maxed'); else fill.classList.remove('maxed');
+            if (pct >= 100) fill.classList.add('maxed'); else fill.classList.remove('maxed');
+        }
+
+        function popMiniParticles(len, fromTut = false) {
+            const count = len >= 5 ? 15 : 5;
+            const emojis = len >= 5 ? ['⭐', '✨', '🔥'] : ['✨'];
+            const container = fromTut ? document.getElementById('tutInput') : document.getElementById('inputDisplay');
+            const rect = container.getBoundingClientRect();
+            
+            for(let i=0; i<count; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'mini-particle';
+                particle.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+                
+                const angle = Math.random() * Math.PI * 2;
+                const velocity = 30 + Math.random() * 60;
+                const tx = Math.cos(angle) * velocity;
+                const ty = Math.sin(angle) * velocity - 20; 
+                
+                particle.style.setProperty('--tx', `${tx}px`);
+                particle.style.setProperty('--ty', `${ty}px`);
+                particle.style.left = `${rect.left + rect.width/2}px`;
+                particle.style.top = `${rect.top + rect.height/2}px`;
+                
+                document.body.appendChild(particle);
+                setTimeout(() => { if (document.body.contains(particle)) particle.remove(); }, 1000);
+            }
+        }
+
+        function triggerMassiveCelebration() {
+            const overlay = document.createElement('div');
+            overlay.className = 'mega-celebration-overlay';
+            document.body.appendChild(overlay);
+
+            for(let i=0; i<3; i++) {
+                setTimeout(() => {
+                    const ring = document.createElement('div');
+                    ring.className = 'echo-ring';
+                    overlay.appendChild(ring);
+                }, i * 400);
+            }
+
+            const emojis = ['🌟', '💥', '🏆', '🔥', '✨'];
+            for(let i=0; i<40; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'mega-particle';
+                particle.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+                
+                const angle = Math.random() * Math.PI * 2;
+                const velocity = 100 + Math.random() * 250;
+                particle.style.setProperty('--tx', `${Math.cos(angle) * velocity}px`);
+                particle.style.setProperty('--ty', `${Math.sin(angle) * velocity}px`);
+                particle.style.left = '50%'; particle.style.top = '40%';
+                particle.style.animationDelay = `${Math.random() * 0.2}s`;
+                
+                overlay.appendChild(particle);
+            }
+
+            setTimeout(() => { if (document.body.contains(overlay)) overlay.remove(); }, 3000);
         }
 
         function submitWord() {
@@ -490,8 +546,7 @@
                 box.classList.add('invalid'); setTimeout(() => box.classList.remove('invalid'), 400); return;
             }
             box.classList.add('valid');
-            if (w.length >= 9) confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 }, colors: ['#6366f1','#10b981','#fbbf24'] });
-            else if (w.length >= 5) confetti({ particleCount: 50, spread: 50, origin: { y: 0.6 } });
+            popMiniParticles(w.length);
 
             attempts.push({ word: w, len: w.length, round: currentRound + 1 });
             
@@ -570,19 +625,19 @@
             
             if (totalScore >= target) {
                 document.getElementById('endGameTitle').innerText = "Target Achieved! 🏆";
-                confetti({ particleCount: 150, spread: 80, origin: { y: 0.5 }});
+                triggerMassiveCelebration();
             } else {
                 document.getElementById('endGameTitle').innerText = "Close One! 😅";
             }
             
             const cc = document.getElementById('endGameComparison'); cc.innerHTML = '';
             for(let i = 0; i < MAX_ROUNDS; i++) {
-                const a = attempts[i]; const bWord = dailyData.rounds[i].liveLongestWord;
+                const a = attempts[i]; const bWord = dailyData.rounds[i].agnesWord;
                 const pW = a ? a.word.toUpperCase() : '---'; const pL = a ? a.len : 0;
                 const bW = bWord ? bWord.toUpperCase() : '---'; const bL = bWord ? bWord.length : 0;
                 cc.innerHTML += `<div class="comp-row"><div class="comp-stage">S${i+1}</div><div class="comp-player">${pW} <span style="font-size:0.75rem;color:#94a3b8;">(${pL})</span></div><div class="comp-best">${bW} <span style="font-size:0.75rem;color:#10b981;opacity:0.8;">(${bL})</span></div></div>`;
             }
-            setTimeout(() => document.getElementById('gameOverModal').classList.remove('hidden'), 500);
+            setTimeout(() => document.getElementById('gameOverModal').classList.remove('hidden'), 800);
         }
 
         function showFullScreenAd() {
@@ -600,15 +655,16 @@
         function shareResult() {
             let txt = "";
             attempts.forEach((a, i) => {
-                const mL = dailyData.rounds[i].liveLongestWord ? dailyData.rounds[i].liveLongestWord.length : a.len;
+                const mL = dailyData.rounds[i].agnesWord.length;
                 const f = Math.round(Math.min(1, a.len / mL) * 5);
-                txt += `S${a.round}: ${a.len===mL?'🟪':'🟦'}`.repeat(f/2+1).slice(0, f*2+4) + `${'⬜'.repeat(5-f)} (${a.len}/${mL})\n`;
+                const icon = (a.len > mL) ? '🌟' : ((a.len === mL) ? '🟪' : '🟦');
+                txt += `S${a.round}: ${icon.repeat(Math.max(1, f))} (${a.len}/${mL})\n`;
             });
             
             const totalScore = attempts.reduce((sum, a) => sum + a.len, 0);
             const targetStr = totalScore >= dailyData.targetScore ? "🏆 Target Achieved!" : "😅 Missed Target";
             
-            navigator.clipboard.writeText(`Echoes with Agnes T-V 🎙️\n${dailyData.dayName || "Challenge"}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://yourgame.com`).then(() => showToast("Result copied! Paste it to challenge friends.", "📋"));
+            navigator.clipboard.writeText(`Echoes with Agnes T-V 🎙️\n${dailyData.dayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://yourgame.com`).then(() => showToast("Result copied! Paste it to challenge friends.", "📋"));
         }
 
         function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
