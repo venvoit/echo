@@ -518,7 +518,10 @@
         function precalculateDailyTarget() {
             let totalMax = 0;
             dailyData.rounds.forEach(r => { totalMax += r.agnesWord.length; });
-            dailyData.targetScore = Math.max(1, totalMax - 5);
+            
+            // MATH UPDATE: 65% of Agnes's total max score, bounded to a minimum of 8
+            dailyData.targetScore = Math.max(8, Math.floor(totalMax * 0.65));
+            
             document.getElementById('dailyTargetDisplay').innerText = dailyData.targetScore;
         }
 
