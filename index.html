@@ -520,7 +520,7 @@
             dailyData.rounds.forEach(r => { totalMax += r.agnesWord.length; });
             
             // MATH UPDATE: 65% of Agnes's total max score, bounded to a minimum of 8
-            dailyData.targetScore = Math.max(8, Math.floor(totalMax * 0.65));
+            dailyData.targetScore = Math.max(8, Math.floor(totalMax * 0.75));
             
             document.getElementById('dailyTargetDisplay').innerText = dailyData.targetScore;
         }
