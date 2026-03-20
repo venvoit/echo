@@ -830,7 +830,7 @@
             
             const totalScore = attempts.reduce((sum, a) => sum + a.len, 0);
             const targetStr = totalScore >= dailyData.targetScore ? "🏆 Target Achieved!" : "😅 Missed Target";
-            const shareText = `Echoes with Agnes T-V 🎙️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://yourgame.com`;
+            const shareText = `Echoes with Agnes T-V 🎙️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://venvoit.github.io/echo/`;
             
             if (!navigator.clipboard) { fallbackCopyTextToClipboard(shareText); return; }
             navigator.clipboard.writeText(shareText)
