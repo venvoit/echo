@@ -171,7 +171,7 @@
         .ad-btn:active { transform: scale(0.95); box-shadow: none; }
         .apple-btn { background: #1e293b; } .google-btn { background: #10b981; }
 
-        /* CUSTOM ANIMATIONS (NO 3RD PARTY LIBRARIES) */
+        /* CUSTOM ANIMATIONS */
         @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
         @keyframes popIn { 0% { transform: scale(0.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
         @keyframes blink { 50% { opacity: 0; } }
@@ -196,13 +196,14 @@
         }
         .shake-active { animation: screen-shake 0.5s cubic-bezier(.36,.07,.19,.97) both; }
 
-        /* MEGA CELEBRATION OVERLAY */
+        /* MEGA CELEBRATION OVERLAY - RESPONSIVE WIDTH FIX */
         .mega-celebration-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999; display: flex; align-items: center; justify-content: center; overflow: hidden; }
         
         .mega-banner {
             position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%) scale(0);
-            font-size: 2.5rem; font-weight: 900; color: #fff; text-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 40px #10b981, 0 0 80px #10b981;
-            white-space: nowrap; animation: banner-pop 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; z-index: 10001; font-family: 'Varela Round', sans-serif;
+            font-size: 2.2rem; font-weight: 900; color: #fff; text-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 40px #10b981, 0 0 80px #10b981;
+            white-space: normal; width: 90vw; text-align: center; line-height: 1.2;
+            animation: banner-pop 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; z-index: 10001; font-family: 'Varela Round', sans-serif;
         }
         @keyframes banner-pop {
             0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
