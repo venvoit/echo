@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Echoes with Agnes T-V</title>
+    <title>Echoes with Susie Dent</title>
     
     <!-- Relative paths for local testing & web server -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
@@ -234,7 +234,7 @@
     <header>
         <div class="header-left">
             <div class="logo-main">ECHOES</div>
-            <div class="logo-sub">Agnes T-V &bull; <span id="headerDayLabel"></span></div>
+            <div class="logo-sub">Susie Dent &bull; <span id="headerDayLabel"></span></div>
         </div>
         <div class="header-right">
             <div class="round-indicator" id="roundIndicator">S 1/3</div>
@@ -362,7 +362,7 @@
             <div class="big-rank" id="finalScore">0</div>
             <div style="font-size: 1.1rem; color: #4f46e5; font-weight:800; margin-bottom: 20px;" id="finalRank">Target: 0</div>
             <div class="comparison-container">
-                <div class="comp-label"><span style="width:40px;"></span><span style="flex:1; text-align:center;">You</span><span style="flex:1; text-align:center; color:#10b981;">Agnes's Target</span></div>
+                <div class="comp-label"><span style="width:40px;"></span><span style="flex:1; text-align:center;">You</span><span style="flex:1; text-align:center; color:#10b981;">Susie's Target</span></div>
                 <div id="endGameComparison"></div>
             </div>
             <button class="control-btn btn-submit" style="width:100%; margin-bottom: 12px;" onclick="shareResult()">Share Score 📤</button>
@@ -395,23 +395,23 @@
     <script>
         // --- 13 DAYS OF HAND-CURATED, SCRAMBLED PUZZLES (VOWELS FRONT-LOADED) ---
         const PUZZLE_DB = [
-            { id: 0, rounds: [{ letters: ["A", "E", "S", "P", "C"], agnesWord: "SPACE" }, { letters: ["I", "S", "H", "P"], agnesWord: "SHIP" }, { letters: ["E", "A", "D", "L", "Y"], agnesWord: "DELAY" }] },
-            { id: 1, rounds: [{ letters: ["O", "I", "L"], agnesWord: "OIL" }, { letters: ["I", "E", "P", "R", "C"], agnesWord: "PRICE" }, { letters: ["I", "E", "H", "K"], agnesWord: "HIKE" }] },
-            { id: 2, rounds: [{ letters: ["O", "E", "M", "R"], agnesWord: "MORE" }, { letters: ["A", "R", "T"], agnesWord: "ART" }, { letters: ["E", "T", "H", "F"], agnesWord: "THEFT" }] },
-            { id: 3, rounds: [{ letters: ["I", "B", "G"], agnesWord: "BIG" }, { letters: ["O", "C", "H"], agnesWord: "CHOC" }, { letters: ["O", "U", "V", "M"], agnesWord: "OVUM" }] },
-            { id: 4, rounds: [{ letters: ["A", "M", "Y"], agnesWord: "MAY" }, { letters: ["E", "T", "H"], agnesWord: "THE" }, { letters: ["O", "E", "F", "R", "C"], agnesWord: "FORCE" }] },
-            { id: 5, rounds: [{ letters: ["A", "W", "H", "T"], agnesWord: "WHAT" }, { letters: ["E", "T", "H"], agnesWord: "THE" }, { letters: ["O", "F", "L", "C", "K"], agnesWord: "FLOCK" }] },
-            { id: 6, rounds: [{ letters: ["O", "T", "R", "Y"], agnesWord: "TORY" }, { letters: ["A", "V", "T"], agnesWord: "VAT" }, { letters: ["I", "A", "L", "R"], agnesWord: "LIAR" }] },
-            { id: 7, rounds: [{ letters: ["A", "I", "P", "N", "T"], agnesWord: "PAINT" }, { letters: ["E", "T", "H"], agnesWord: "THE" }, { letters: ["O", "T", "W", "N"], agnesWord: "TOWN" }] },
-            { id: 8, rounds: [{ letters: ["A", "I", "R"], agnesWord: "AIR" }, { letters: ["A", "U", "E", "S", "C"], agnesWord: "SAUCE" }, { letters: ["E", "A", "H", "T"], agnesWord: "HEAT" }] },
-            { id: 9, rounds: [{ letters: ["A", "M", "R", "Y"], agnesWord: "MARY" }, { letters: ["A", "R", "N", "D"], agnesWord: "RAND" }, { letters: ["U", "J", "M", "P"], agnesWord: "JUMP" }] },
-            { id: 10, rounds: [{ letters: ["I", "L", "M", "P"], agnesWord: "LIMP" }, { letters: ["A", "O", "T", "C"], agnesWord: "TACO" }, { letters: ["I", "E", "T", "M"], agnesWord: "TIME" }] },
-            { id: 11, rounds: [{ letters: ["I", "E", "F", "R", "D"], agnesWord: "FRIED" }, { letters: ["O", "A", "S", "L", "R"], agnesWord: "SOLAR" }, { letters: ["A", "E", "P", "N", "L"], agnesWord: "PANEL" }] },
-            { id: 12, rounds: [{ letters: ["E", "C", "L", "B"], agnesWord: "CELEB" }, { letters: ["A", "E", "B", "K"], agnesWord: "BAKE" }, { letters: ["A", "E", "D", "N", "C"], agnesWord: "DANCE" }] }
+            { id: 0, rounds: [{ letters: ["I", "L", "M", "P"], susieWord: "LIMP" }, { letters: ["A", "O", "T", "C"], susieWord: "TACO" }, { letters: ["I", "E", "T", "M"], susieWord: "TIME" }] },
+            { id: 1, rounds: [{ letters: ["O", "I", "L"], susieWord: "OIL" }, { letters: ["I", "E", "P", "R", "C"], susieWord: "PRICE" }, { letters: ["I", "E", "H", "K"], susieWord: "HIKE" }] },
+            { id: 2, rounds: [{ letters: ["O", "E", "M", "R"], susieWord: "MORE" }, { letters: ["A", "R", "T"], susieWord: "ART" }, { letters: ["E", "T", "H", "F"], susieWord: "THEFT" }] },
+            { id: 3, rounds: [{ letters: ["I", "B", "G"], susieWord: "BIG" }, { letters: ["O", "C", "H"], susieWord: "CHOC" }, { letters: ["O", "U", "V", "M"], susieWord: "OVUM" }] },
+            { id: 4, rounds: [{ letters: ["A", "M", "Y"], susieWord: "MAY" }, { letters: ["E", "T", "H"], susieWord: "THE" }, { letters: ["O", "E", "F", "R", "C"], susieWord: "FORCE" }] },
+            { id: 5, rounds: [{ letters: ["A", "W", "H", "T"], susieWord: "WHAT" }, { letters: ["E", "T", "H"], susieWord: "THE" }, { letters: ["O", "F", "L", "C", "K"], susieWord: "FLOCK" }] },
+            { id: 6, rounds: [{ letters: ["O", "T", "R", "Y"], susieWord: "TORY" }, { letters: ["A", "V", "T"], susieWord: "VAT" }, { letters: ["I", "A", "L", "R"], susieWord: "LIAR" }] },
+            { id: 7, rounds: [{ letters: ["A", "I", "P", "N", "T"], susieWord: "PAINT" }, { letters: ["E", "T", "H"], susieWord: "THE" }, { letters: ["O", "T", "W", "N"], susieWord: "TOWN" }] },
+            { id: 8, rounds: [{ letters: ["A", "I", "R"], susieWord: "AIR" }, { letters: ["A", "U", "E", "S", "C"], susieWord: "SAUCE" }, { letters: ["E", "A", "H", "T"], susieWord: "HEAT" }] },
+            { id: 9, rounds: [{ letters: ["A", "M", "R", "Y"], susieWord: "MARY" }, { letters: ["A", "R", "N", "D"], susieWord: "RAND" }, { letters: ["U", "J", "M", "P"], susieWord: "JUMP" }] },
+            { id: 10, rounds: [{ letters: ["A", "E", "S", "P", "C"], susieWord: "SPACE" }, { letters: ["I", "S", "H", "P"], susieWord: "SHIP" }, { letters: ["E", "A", "D", "L", "Y"], susieWord: "DELAY" }] },
+            { id: 11, rounds: [{ letters: ["I", "E", "F", "R", "D"], susieWord: "FRIED" }, { letters: ["O", "A", "S", "L", "R"], susieWord: "SOLAR" }, { letters: ["A", "E", "P", "N", "L"], susieWord: "PANEL" }] },
+            { id: 12, rounds: [{ letters: ["E", "C", "L", "B"], susieWord: "CELEB" }, { letters: ["A", "E", "B", "K"], susieWord: "BAKE" }, { letters: ["A", "E", "D", "N", "C"], susieWord: "DANCE" }] }
         ];
 
         const MAX_ROUNDS = 3;
-        const STATS_KEY = 'echoes_agnes_stats'; 
+        const STATS_KEY = 'echoes_susie_stats'; 
         
         let currentDayIndex = 0; let currentRound = 0; let currentInput = ""; 
         let attempts = []; let dailyData = PUZZLE_DB[0];
@@ -502,7 +502,7 @@
 
         function showPhraseModal() {
             // Dynamically generate the 3-word phrase from the current day's database
-            const phrase = dailyData.rounds.map(r => r.agnesWord).join(' ');
+            const phrase = dailyData.rounds.map(r => r.susieWord).join(' ');
             document.getElementById('dailyPhraseDisplay').innerText = phrase;
             document.getElementById('phraseModal').classList.remove('hidden');
         }
@@ -527,8 +527,7 @@
         function getStats() { 
             let stats = JSON.parse(localStorage.getItem(STATS_KEY));
             if (!stats) {
-                const old = JSON.parse(localStorage.getItem('echoes_agnes_stats_v29')); // simple migration
-                stats = old || { played:0, streak:0, maxStreak:0, bestWord:0 };
+                stats = { played:0, streak:0, maxStreak:0, bestWord:0 };
             }
             return stats; 
         }
@@ -553,9 +552,9 @@
 
         function precalculateDailyTarget() {
             let totalMax = 0;
-            dailyData.rounds.forEach(r => { totalMax += r.agnesWord.length; });
+            dailyData.rounds.forEach(r => { totalMax += r.susieWord.length; });
             
-            // MATH UPDATE: 65% of Agnes's total max score, bounded to a minimum of 8
+            // MATH UPDATE: 65% of Susie's total max score, bounded to a minimum of 8
             dailyData.targetScore = Math.max(8, Math.floor(totalMax * 0.65));
             
             document.getElementById('dailyTargetDisplay').innerText = dailyData.targetScore;
@@ -603,7 +602,7 @@
             const matched = FULL_DICTIONARY.filter(w => [...w].every(c => allowedSet.has(c)));
             
             currentValidSet = new Set(matched);
-            currentMaxLen = rData.agnesWord.length;
+            currentMaxLen = rData.susieWord.length;
 
             document.getElementById('roundIndicator').innerText = `STAGE ${idx + 1}/3`;
             const grid = document.getElementById('lettersGrid'); grid.classList.add('fade-out');
@@ -795,7 +794,7 @@
                     c.innerHTML += `<div class="dict-meaning"><div class="dict-pos">${m.partOfSpeech}</div><div class="dict-def">${t}</div></div>`;
                 });
             } catch (err) {
-                c.innerHTML = `<div class="dict-word">${w}</div><div class="dict-meaning" style="border-color:#fbbf24;background:#fffbeb;"><div class="dict-def">Agnes confirms it's valid, but we couldn't fetch a live definition.</div></div>`;
+                c.innerHTML = `<div class="dict-word">${w}</div><div class="dict-meaning" style="border-color:#fbbf24;background:#fffbeb;"><div class="dict-def">Susie confirms it's valid, but we couldn't fetch a live definition.</div></div>`;
             }
         }
 
@@ -818,7 +817,7 @@
             
             const cc = document.getElementById('endGameComparison'); cc.innerHTML = '';
             for(let i = 0; i < MAX_ROUNDS; i++) {
-                const a = attempts[i]; const bWord = dailyData.rounds[i].agnesWord;
+                const a = attempts[i]; const bWord = dailyData.rounds[i].susieWord;
                 const pW = a ? a.word.toUpperCase() : '---'; const pL = a ? a.len : 0;
                 const bW = bWord ? bWord.toUpperCase() : '---'; const bL = bWord ? bWord.length : 0;
                 cc.innerHTML += `<div class="comp-row"><div class="comp-stage">S${i+1}</div><div class="comp-player">${pW} <span style="font-size:0.75rem;color:#94a3b8;">(${pL})</span></div><div class="comp-best">${bW} <span style="font-size:0.75rem;color:#10b981;opacity:0.8;">(${bL})</span></div></div>`;
@@ -857,7 +856,7 @@
         function shareResult() {
             let txt = "";
             attempts.forEach((a, i) => {
-                const mL = dailyData.rounds[i].agnesWord.length;
+                const mL = dailyData.rounds[i].susieWord.length;
                 const f = Math.round(Math.min(1, a.len / mL) * 5);
                 const icon = (a.len > mL) ? '🌟' : ((a.len === mL) ? '🟪' : '🟦');
                 txt += `S${a.round}: ${icon.repeat(Math.max(1, f))} (${a.len}/${mL})\n`;
@@ -865,7 +864,7 @@
             
             const totalScore = attempts.reduce((sum, a) => sum + a.len, 0);
             const targetStr = totalScore >= dailyData.targetScore ? "🏆 Target Achieved!" : "😅 Missed Target";
-            const shareText = `Echoes with Agnes T-V 🎙️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://yourgame.com`;
+            const shareText = `Echoes with Susie Dent 🎙️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://yourgame.com`;
             
             if (!navigator.clipboard) { fallbackCopyTextToClipboard(shareText); return; }
             navigator.clipboard.writeText(shareText)
