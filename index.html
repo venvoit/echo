@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Echoes with Agnes T-V</title>
     
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- Relative paths for local testing & web server -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="manifest" href="./site.webmanifest">
     <meta name="theme-color" content="#ffffff">
 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap" rel="stylesheet">
@@ -171,7 +172,7 @@
         .ad-btn:active { transform: scale(0.95); box-shadow: none; }
         .apple-btn { background: #1e293b; } .google-btn { background: #10b981; }
 
-        /* CUSTOM ANIMATIONS (NO 3RD PARTY LIBRARIES) */
+        /* CUSTOM ANIMATIONS */
         @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
         @keyframes popIn { 0% { transform: scale(0.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
         @keyframes blink { 50% { opacity: 0; } }
@@ -308,6 +309,7 @@
         <button class="dev-toggle" onclick="toggleDev()" title="Toggle Dev Menu">⚙️</button>
     </div>
 
+    <!-- ONE TIME TUTORIAL MODAL -->
     <div class="modal-overlay hidden" id="introModal" role="dialog" aria-modal="true">
         <div class="modal">
             <h2>The Golden Rule 🌟</h2>
@@ -321,7 +323,19 @@
                 <button class="control-btn btn-del" style="width: 100%; margin-top: 25px; padding: 12px; box-shadow: 0 4px 0 rgba(0,0,0,0.1);" onclick="tutDel()">Delete</button>
             </div>
             <div id="tutSuccess" style="display:none; color: #10b981; font-weight: 800; margin-bottom: 20px; font-size: 1.1rem; animation: popIn 0.3s;">Perfect! You tapped 'T' twice.</div>
-            <button class="control-btn btn-submit" id="tutStartBtn" style="width:100%; opacity: 0.5; pointer-events: none; transition: all 0.3s;" onclick="closeModal('introModal')">Spell TEST to Continue</button>
+            <button class="control-btn btn-submit" id="tutStartBtn" style="width:100%; opacity: 0.5; pointer-events: none; transition: all 0.3s;" onclick="finishTutorial()">Spell TEST to Continue</button>
+        </div>
+    </div>
+
+    <!-- NEW: PHRASE OF THE DAY MODAL -->
+    <div class="modal-overlay hidden" id="phraseModal" role="dialog" aria-modal="true">
+        <div class="modal">
+            <h2 style="color: #4f46e5; margin-top: 0; font-size: 1.6rem; font-weight: 800;">Phrase of the Day</h2>
+            <div id="dailyPhraseDisplay" style="font-size: 1.5rem; font-weight: 900; letter-spacing: 2px; color: #3730a3; margin: 20px 0; padding: 15px; background: #eef2ff; border: 2px dashed #a5b4fc; border-radius: 16px;"></div>
+            <p style="color:#64748b; font-size: 1rem; margin-bottom: 25px; line-height: 1.5;">
+                Make the <strong>longest possible words</strong> with the given letters for each round, in order to beat the target score!
+            </p>
+            <button class="control-btn btn-submit" style="width:100%; box-shadow: 0 5px 0 #3730a3;" onclick="closeModal('phraseModal')">Play Now</button>
         </div>
     </div>
 
@@ -397,7 +411,7 @@
         ];
 
         const MAX_ROUNDS = 3;
-        const STATS_KEY = 'echoes_agnes_stats'; // Stable key
+        const STATS_KEY = 'echoes_agnes_stats'; 
         
         let currentDayIndex = 0; let currentRound = 0; let currentInput = ""; 
         let attempts = []; let dailyData = PUZZLE_DB[0];
@@ -444,8 +458,13 @@
                 document.getElementById('headerDayLabel').innerText = dailyData.dynamicDayName;
                 endGame(true); // isReplay = true
             } else {
-                document.getElementById('introModal').classList.remove('hidden');
                 loadDay(todayIndex); 
+                // Check if tutorial has been done before
+                if (!localStorage.getItem('echoes_tutorial_done')) {
+                    document.getElementById('introModal').classList.remove('hidden');
+                } else {
+                    showPhraseModal();
+                }
             }
             
             setupKeyboard();
@@ -473,6 +492,19 @@
             } else if (tutInputStr.length === 4) {
                 el.classList.add('invalid'); setTimeout(() => el.classList.remove('invalid'), 400);
             }
+        }
+
+        function finishTutorial() {
+            localStorage.setItem('echoes_tutorial_done', 'true');
+            closeModal('introModal');
+            showPhraseModal();
+        }
+
+        function showPhraseModal() {
+            // Dynamically generate the 3-word phrase from the current day's database
+            const phrase = dailyData.rounds.map(r => r.agnesWord).join(' ');
+            document.getElementById('dailyPhraseDisplay').innerText = phrase;
+            document.getElementById('phraseModal').classList.remove('hidden');
         }
 
         function showToast(message, icon = "⚠️") {
