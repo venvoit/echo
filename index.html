@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Echoes with Susie Dent</title>
+    <title>Susie Dent's Recycler</title>
     
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -232,7 +232,7 @@
 
     <header>
         <div class="header-left">
-            <div class="logo-main">ECHOES</div>
+            <div class="logo-main">RECYCLER</div>
             <div class="logo-sub">Susie Dent &bull; <span id="headerDayLabel"></span></div>
         </div>
         <div class="header-right">
@@ -286,7 +286,7 @@
 
     <div class="full-screen-ad hidden" id="fullScreenAd">
         <img src="susie-icon.png" alt="Two Words with Susie Dent" style="width: 120px; height: 120px; border-radius: 24px; box-shadow: 0 12px 25px rgba(0,0,0,0.2); margin-bottom: 20px;">
-        <h1 style="color: #4f46e5; margin-top: 0; font-weight: 800;">Enjoying Echoes?</h1>
+        <h1 style="color: #4f46e5; margin-top: 0; font-weight: 800;">Enjoying Recycler?</h1>
         <p style="color: #64748b; font-size: 1.1rem; line-height: 1.5; margin-bottom: 35px;">
             Take your vocabulary to the next level in our hit game <br><strong style="color: #334155;">Two Words with Susie Dent</strong>!
         </p>
@@ -311,7 +311,7 @@
     <div class="modal-overlay hidden" id="introModal" role="dialog" aria-modal="true">
         <div class="modal">
             <h2>The Golden Rule 🌟</h2>
-            <p style="color:#64748b; font-size: 0.95rem; margin-bottom: 10px; line-height: 1.4;">In Echoes, you can use the same tile <strong>as many times as you want!</strong><br>Beat all 3 stages by hitting the combined points target.</p>
+            <p style="color:#64748b; font-size: 0.95rem; margin-bottom: 10px; line-height: 1.4;">In Recycler, you can use the same tile <strong>as many times as you want!</strong><br>Beat all 3 stages by hitting the combined points target.</p>
             <p style="color:#334155; font-weight: 700; margin-bottom: 5px;">Try it! Spell <span style="color:#6366f1; font-weight:800; font-size: 1.1rem;">TEST</span> using only these 3 tiles:</p>
             <div class="tut-board">
                 <div class="tut-input" id="tutInput"></div>
@@ -378,7 +378,7 @@
                 <div class="stat-box"><div class="stat-val" id="statBestWord">0</div><div class="stat-label">Best Word</div></div>
             </div>
             <div class="ad-banner">
-                <div class="ad-title">Enjoying Echoes?</div>
+                <div class="ad-title">Enjoying Recycler?</div>
                 <div class="ad-desc">Test your vocabulary further in our hit game <strong>Two Words with Susie Dent</strong>!</div>
                 <div class="ad-buttons">
                     <a href="https://apps.apple.com/by/app/two-words-with-susie-dent/id1514156691" target="_blank" class="ad-btn apple-btn"> App Store</a>
@@ -858,7 +858,7 @@
             
             const totalScore = attempts.reduce((sum, a) => sum + a.len, 0);
             const targetStr = totalScore >= dailyData.targetScore ? "🏆 Target Achieved!" : "😅 Missed Target";
-            const shareText = `Echoes with Susie Dent 🎙️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://venvoit.github.io/echo/`;
+            const shareText = `Susie Dent's Recycler ♻️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://venvoit.github.io/echo/`;
             
             if (!navigator.clipboard) { fallbackCopyTextToClipboard(shareText); return; }
             navigator.clipboard.writeText(shareText)
