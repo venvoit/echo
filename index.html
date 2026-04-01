@@ -434,6 +434,18 @@
             resetGameState();
         }
 
+        function resetGameState() {
+            currentRound = 0; attempts = []; isSubmitting = false;
+            document.getElementById('currentTotalScore').innerText = "0";
+            document.getElementById('mainGameArea').classList.remove('hidden');
+            document.getElementById('fullScreenAd').classList.add('hidden');
+            const btn = document.getElementById('submitBtn'); btn.disabled = false; btn.innerText = "Submit";
+            document.getElementById('gameOverModal').classList.add('hidden');
+            document.getElementById('statsModal').classList.add('hidden');
+            document.getElementById('dictHint').style.display = 'none';
+            loadRound(currentRound);
+        }
+
         function precalculateDailyTarget() {
             dailyData.targetScore = dailyData.target || 17;
             document.getElementById('dailyTargetDisplay').innerText = dailyData.targetScore;
