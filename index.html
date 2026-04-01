@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Echoes with Susie Dent</title>
     
-    <!-- Relative paths for local testing & web server -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -309,7 +308,6 @@
         <button class="dev-toggle" onclick="toggleDev()" title="Toggle Dev Menu">⚙️</button>
     </div>
 
-    <!-- ONE TIME TUTORIAL MODAL -->
     <div class="modal-overlay hidden" id="introModal" role="dialog" aria-modal="true">
         <div class="modal">
             <h2>The Golden Rule 🌟</h2>
@@ -327,7 +325,6 @@
         </div>
     </div>
 
-    <!-- NEW: PHRASE OF THE DAY MODAL -->
     <div class="modal-overlay hidden" id="phraseModal" role="dialog" aria-modal="true">
         <div class="modal">
             <h2 style="color: #4f46e5; margin-top: 0; font-size: 1.6rem; font-weight: 800;">Phrase of the Day</h2>
@@ -394,20 +391,21 @@
 
     <script>
         // --- 13 DAYS OF HAND-CURATED, SCRAMBLED PUZZLES (VOWELS FRONT-LOADED) ---
+        // Configurable 'target' property added to each day. Default falls back to 17 if omitted.
         const PUZZLE_DB = [
-            { id: 0, rounds: [{ letters: ["I", "L", "M", "P"], susieWord: "LIMP" }, { letters: ["A", "O", "T", "C"], susieWord: "TACO" }, { letters: ["I", "E", "T", "M"], susieWord: "TIME" }] },
-            { id: 1, rounds: [{ letters: ["I", "E", "F", "R", "D"], susieWord: "FRIED" }, { letters: ["O", "A", "S", "L", "R"], susieWord: "SOLAR" }, { letters: ["A", "E", "P", "N", "L"], susieWord: "PANEL" }] },
-            { id: 2, rounds: [{ letters: ["O", "E", "M", "R"], susieWord: "MORE" }, { letters: ["A", "R", "T"], susieWord: "ART" }, { letters: ["E", "T", "H", "F"], susieWord: "THEFT" }] },
-            { id: 3, rounds: [{ letters: ["I", "B", "G"], susieWord: "BIG" }, { letters: ["O", "C", "H"], susieWord: "CHOC" }, { letters: ["O", "U", "V", "M"], susieWord: "OVUM" }] },
-            { id: 4, rounds: [{ letters: ["A", "M", "Y"], susieWord: "MAY" }, { letters: ["E", "T", "H"], susieWord: "THE" }, { letters: ["O", "E", "F", "R", "C"], susieWord: "FORCE" }] },
-            { id: 5, rounds: [{ letters: ["A", "W", "H", "T"], susieWord: "WHAT" }, { letters: ["E", "T", "H"], susieWord: "THE" }, { letters: ["O", "F", "L", "C", "K"], susieWord: "FLOCK" }] },
-            { id: 6, rounds: [{ letters: ["O", "T", "R", "Y"], susieWord: "TORY" }, { letters: ["A", "V", "T"], susieWord: "VAT" }, { letters: ["I", "A", "L", "R"], susieWord: "LIAR" }] },
-            { id: 7, rounds: [{ letters: ["A", "I", "P", "N", "T"], susieWord: "PAINT" }, { letters: ["E", "T", "H"], susieWord: "THE" }, { letters: ["O", "T", "W", "N"], susieWord: "TOWN" }] },
-            { id: 8, rounds: [{ letters: ["A", "I", "R"], susieWord: "AIR" }, { letters: ["A", "U", "E", "S", "C"], susieWord: "SAUCE" }, { letters: ["E", "A", "H", "T"], susieWord: "HEAT" }] },
-            { id: 9, rounds: [{ letters: ["A", "M", "R", "Y"], susieWord: "MARY" }, { letters: ["A", "R", "N", "D"], susieWord: "RAND" }, { letters: ["U", "J", "M", "P"], susieWord: "JUMP" }] },
-            { id: 10, rounds: [{ letters: ["A", "E", "S", "P", "C"], susieWord: "SPACE" }, { letters: ["I", "S", "H", "P"], susieWord: "SHIP" }, { letters: ["E", "A", "D", "L", "Y"], susieWord: "DELAY" }] },
-            { id: 11, rounds: [{ letters: ["O", "I", "L"], susieWord: "OIL" }, { letters: ["I", "E", "P", "R", "C"], susieWord: "PRICE" }, { letters: ["I", "E", "H", "K"], susieWord: "HIKE" }] },
-            { id: 12, rounds: [{ letters: ["E", "C", "L", "B"], susieWord: "CELEB" }, { letters: ["A", "E", "B", "K"], susieWord: "BAKE" }, { letters: ["A", "E", "D", "N", "C"], susieWord: "DANCE" }] }
+            { id: 0, target: 17, rounds: [{ letters: ["I", "L", "M", "P"], susieWord: "LIMP" }, { letters: ["A", "O", "T", "C"], susieWord: "TACO" }, { letters: ["I", "E", "T", "M"], susieWord: "TIME" }] },
+            { id: 1, target: 17, rounds: [{ letters: ["O", "I", "L"], susieWord: "OIL" }, { letters: ["I", "E", "P", "R", "C"], susieWord: "PRICE" }, { letters: ["I", "E", "H", "K"], susieWord: "HIKE" }] },
+            { id: 2, target: 17, rounds: [{ letters: ["O", "E", "M", "R"], susieWord: "MORE" }, { letters: ["A", "R", "T"], susieWord: "ART" }, { letters: ["E", "T", "H", "F"], susieWord: "THEFT" }] },
+            { id: 3, target: 17, rounds: [{ letters: ["I", "B", "G"], susieWord: "BIG" }, { letters: ["O", "C", "H"], susieWord: "CHOC" }, { letters: ["O", "U", "V", "M"], susieWord: "OVUM" }] },
+            { id: 4, target: 17, rounds: [{ letters: ["A", "M", "Y"], susieWord: "MAY" }, { letters: ["E", "T", "H"], susieWord: "THE" }, { letters: ["O", "E", "F", "R", "C"], susieWord: "FORCE" }] },
+            { id: 5, target: 17, rounds: [{ letters: ["A", "W", "H", "T"], susieWord: "WHAT" }, { letters: ["E", "T", "H"], susieWord: "THE" }, { letters: ["O", "F", "L", "C", "K"], susieWord: "FLOCK" }] },
+            { id: 6, target: 17, rounds: [{ letters: ["O", "T", "R", "Y"], susieWord: "TORY" }, { letters: ["A", "V", "T"], susieWord: "VAT" }, { letters: ["I", "A", "L", "R"], susieWord: "LIAR" }] },
+            { id: 7, target: 17, rounds: [{ letters: ["A", "I", "P", "N", "T"], susieWord: "PAINT" }, { letters: ["E", "T", "H"], susieWord: "THE" }, { letters: ["O", "T", "W", "N"], susieWord: "TOWN" }] },
+            { id: 8, target: 17, rounds: [{ letters: ["A", "I", "R"], susieWord: "AIR" }, { letters: ["A", "U", "E", "S", "C"], susieWord: "SAUCE" }, { letters: ["E", "A", "H", "T"], susieWord: "HEAT" }] },
+            { id: 9, target: 17, rounds: [{ letters: ["A", "M", "R", "Y"], susieWord: "MARY" }, { letters: ["A", "R", "N", "D"], susieWord: "RAND" }, { letters: ["U", "J", "M", "P"], susieWord: "JUMP" }] },
+            { id: 10, target: 17, rounds: [{ letters: ["A", "E", "S", "P", "C"], susieWord: "SPACE" }, { letters: ["I", "S", "H", "P"], susieWord: "SHIP" }, { letters: ["E", "A", "D", "L", "Y"], susieWord: "DELAY" }] },
+            { id: 11, target: 17, rounds: [{ letters: ["I", "E", "F", "R", "D"], susieWord: "FRIED" }, { letters: ["O", "A", "S", "L", "R"], susieWord: "SOLAR" }, { letters: ["A", "E", "P", "N", "L"], susieWord: "PANEL" }] },
+            { id: 12, target: 17, rounds: [{ letters: ["E", "C", "L", "B"], susieWord: "CELEB" }, { letters: ["A", "E", "B", "K"], susieWord: "BAKE" }, { letters: ["A", "E", "D", "N", "C"], susieWord: "DANCE" }] }
         ];
 
         const MAX_ROUNDS = 3;
@@ -551,12 +549,8 @@
         }
 
         function precalculateDailyTarget() {
-            let totalMax = 0;
-            dailyData.rounds.forEach(r => { totalMax += r.susieWord.length; });
-            
-            // MATH UPDATE: 65% of Susie's total max score, bounded to a minimum of 8
-            dailyData.targetScore = Math.max(8, Math.floor(totalMax * 0.65));
-            
+            // Check if a custom target is set for today's puzzle. If not, use the default of 17.
+            dailyData.targetScore = dailyData.target || 17;
             document.getElementById('dailyTargetDisplay').innerText = dailyData.targetScore;
         }
 
@@ -859,12 +853,12 @@
                 const mL = dailyData.rounds[i].susieWord.length;
                 const f = Math.round(Math.min(1, a.len / mL) * 5);
                 const icon = (a.len > mL) ? '🌟' : ((a.len === mL) ? '🟪' : '🟦');
-                txt += `S${a.round}: ${icon.repeat(Math.max(1, f))} (${a.len}/${mL})\n`;
+                txt += `S${a.round}: ${icon.repeat(Math.max(1, f))} ${a.len} letter word!\n`;
             });
             
             const totalScore = attempts.reduce((sum, a) => sum + a.len, 0);
             const targetStr = totalScore >= dailyData.targetScore ? "🏆 Target Achieved!" : "😅 Missed Target";
-            const shareText = `Echoes with Susie Dent 🎙️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://yourgame.com`;
+            const shareText = `Echoes with Susie Dent 🎙️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://venvoit.github.io/echo/`;
             
             if (!navigator.clipboard) { fallbackCopyTextToClipboard(shareText); return; }
             navigator.clipboard.writeText(shareText)
