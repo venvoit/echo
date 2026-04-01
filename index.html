@@ -357,25 +357,24 @@
     </div>
 
     <script>
-        // --- 13 DAYS CURATED DATABASE (Susie Benchmarkwords upgraded for default Target: 17) ---
         const PUZZLE_DB = [
-            { id: 0, target: 17, rounds: [{ letters: ["I", "L", "M", "P"], susieWord: "MILLI" }, { letters: ["A", "O", "C", "T"], susieWord: "CATBOAT" }, { letters: ["I", "E", "M", "T"], susieWord: "COMMITTEE" }], phrase: "LIMP TACO TIME" },
-            { id: 1, target: 17, rounds: [{ letters: ["I", "O", "L"], susieWord: "LOLL" }, { letters: ["E", "I", "C", "P", "R"], susieWord: "PIERCER" }, { letters: ["E", "I", "H", "K"], susieWord: "KEECH" }], phrase: "OIL PRICE HIKE" },
-            { id: 2, target: 17, rounds: [{ letters: ["E", "O", "M", "R"], susieWord: "ROOMER" }, { letters: ["A", "R", "T"], susieWord: "TARTAR" }, { letters: ["E", "H", "T", "F"], susieWord: "TEETH" }], phrase: "MORE ART THEFT" },
-            { id: 3, target: 12, rounds: [{ letters: ["I", "B", "G"], susieWord: "GIG" }, { letters: ["O", "C", "H"], susieWord: "HOOCH" }, { letters: ["O", "U", "V", "M"], susieWord: "MUUMUU" }], phrase: "BIG CHOC OVUM" },
-            { id: 4, target: 17, rounds: [{ letters: ["A", "M", "Y"], susieWord: "MAMA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["E", "O", "C", "F", "R"], susieWord: "REEFER" }], phrase: "MAY THE FORCE" },
-            { id: 5, target: 17, rounds: [{ letters: ["A", "H", "T", "W"], susieWord: "TATA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "C", "F", "K", "L"], susieWord: "COLLOCK" }], phrase: "WHAT THE FLOCK" },
-            { id: 6, target: 15, rounds: [{ letters: ["O", "R", "T", "Y"], susieWord: "TYRO" }, { letters: ["A", "T", "V"], susieWord: "TATA" }, { letters: ["A", "I", "L", "R"], susieWord: "RAIL" }], phrase: "TORY VAT LIAR" },
-            { id: 7, target: 18, rounds: [{ letters: ["A", "I", "N", "P", "T"], susieWord: "INPAINT" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "N", "T", "W"], susieWord: "WONTON" }], phrase: "PAINT THE TOWN" },
-            { id: 8, target: 18, rounds: [{ letters: ["A", "I", "R"], susieWord: "ARIA" }, { letters: ["A", "E", "U", "C", "S"], susieWord: "CAUSELESS" }, { letters: ["A", "E", "H", "T"], susieWord: "TEETHE" }], phrase: "AIR SAUCE HEAT" },
-            { id: 9, target: 17, rounds: [{ letters: ["A", "M", "R", "Y"], susieWord: "MARRY" }, { letters: ["A", "D", "N", "R"], susieWord: "RADAR" }, { letters: ["U", "J", "M", "P"], susieWord: "JUMP" }], phrase: "MARY RAND JUMP" },
-            { id: 10, target: 17, rounds: [{ letters: ["A", "E", "C", "P", "S"], susieWord: "CEASE" }, { letters: ["I", "H", "P", "S"], susieWord: "SHIP" }, { letters: ["A", "E", "D", "L", "Y"], susieWord: "DELAYED" }], phrase: "SPACE SHIP DELAY" },
-            { id: 11, target: 17, rounds: [{ letters: ["E", "I", "D", "F", "R"], susieWord: "REFIED" }, { letters: ["A", "O", "L", "R", "S"], susieWord: "SOLAR" }, { letters: ["A", "E", "L", "N", "P"], susieWord: "PANEL" }], phrase: "FRIED SOLAR PANEL" },
-            { id: 12, target: 17, rounds: [{ letters: ["E", "B", "C", "L"], susieWord: "BELLEE" }, { letters: ["A", "E", "B", "K"], susieWord: "BAKE" }, { letters: ["A", "E", "C", "D", "N"], susieWord: "DANCE" }], phrase: "CELEB BAKE DANCE" }
+            { id: 0, target: 17, phrase: "LIMP TACO TIME", rounds: [{ letters: ["I", "L", "M", "P"], susieWord: "MILLI" }, { letters: ["A", "O", "C", "T"], susieWord: "CATBOAT" }, { letters: ["I", "E", "M", "T"], susieWord: "COMMITTEE" }] },
+            { id: 1, target: 17, phrase: "OIL PRICE HIKE", rounds: [{ letters: ["I", "O", "L"], susieWord: "LOLL" }, { letters: ["E", "I", "C", "P", "R"], susieWord: "PIERCER" }, { letters: ["E", "I", "H", "K"], susieWord: "KEECH" }] },
+            { id: 2, target: 17, phrase: "MORE ART THEFT", rounds: [{ letters: ["E", "O", "M", "R"], susieWord: "ROOMER" }, { letters: ["A", "R", "T"], susieWord: "TARTAR" }, { letters: ["E", "H", "T", "F"], susieWord: "TEETH" }] },
+            { id: 3, target: 12, phrase: "BIG CHOC OVUM", rounds: [{ letters: ["I", "B", "G"], susieWord: "GIG" }, { letters: ["O", "C", "H"], susieWord: "HOOCH" }, { letters: ["O", "U", "V", "M"], susieWord: "MUUMUU" }] },
+            { id: 4, target: 17, phrase: "MAY THE FORCE", rounds: [{ letters: ["A", "M", "Y"], susieWord: "MAMA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["E", "O", "C", "F", "R"], susieWord: "REEFER" }] },
+            { id: 5, target: 17, phrase: "WHAT THE FLOCK", rounds: [{ letters: ["A", "H", "T", "W"], susieWord: "TATA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "C", "F", "K", "L"], susieWord: "COLLOCK" }] },
+            { id: 6, target: 15, phrase: "TORY VAT LIAR", rounds: [{ letters: ["O", "R", "T", "Y"], susieWord: "TYRO" }, { letters: ["A", "T", "V"], susieWord: "TATA" }, { letters: ["A", "I", "L", "R"], susieWord: "RAIL" }] },
+            { id: 7, target: 18, phrase: "PAINT THE TOWN", rounds: [{ letters: ["A", "I", "N", "P", "T"], susieWord: "INPAINT" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "N", "T", "W"], susieWord: "WONTON" }] },
+            { id: 8, target: 18, phrase: "AIR SAUCE HEAT", rounds: [{ letters: ["A", "I", "R"], susieWord: "ARIA" }, { letters: ["A", "E", "U", "C", "S"], susieWord: "CAUSELESS" }, { letters: ["A", "E", "H", "T"], susieWord: "TEETHE" }] },
+            { id: 9, target: 17, phrase: "MARY RAND JUMP", rounds: [{ letters: ["A", "M", "R", "Y"], susieWord: "MARRY" }, { letters: ["A", "D", "N", "R"], susieWord: "RADAR" }, { letters: ["U", "J", "M", "P"], susieWord: "JUMP" }] },
+            { id: 10, target: 17, phrase: "SPACE SHIP DELAY", rounds: [{ letters: ["A", "E", "C", "P", "S"], susieWord: "CEASE" }, { letters: ["I", "H", "P", "S"], susieWord: "SHIP" }, { letters: ["A", "E", "D", "L", "Y"], susieWord: "DELAYED" }] },
+            { id: 11, target: 17, phrase: "FRIED SOLAR PANEL", rounds: [{ letters: ["E", "I", "D", "F", "R"], susieWord: "REFIED" }, { letters: ["A", "O", "L", "R", "S"], susieWord: "SOLAR" }, { letters: ["A", "E", "L", "N", "P"], susieWord: "PANEL" }] },
+            { id: 12, target: 17, phrase: "CELEB BAKE DANCE", rounds: [{ letters: ["E", "B", "C", "L"], susieWord: "BELLEE" }, { letters: ["A", "E", "B", "K"], susieWord: "BAKE" }, { letters: ["A", "E", "C", "D", "N"], susieWord: "DANCE" }] }
         ];
 
         const MAX_ROUNDS = 3;
-        const STATS_KEY = 'echoes_susie_stats'; 
+        const STATS_KEY = 'headlines_susie_stats'; 
         
         let currentDayIndex = 0; let currentRound = 0; let currentInput = ""; 
         let attempts = []; let dailyData = PUZZLE_DB[0];
@@ -401,7 +400,7 @@
             const daysElapsed = Math.floor((Date.now() - epoch) / 86400000);
             const todayIndex = daysElapsed % PUZZLE_DB.length;
             
-            const lastPlay = JSON.parse(localStorage.getItem('echoes_last_play') || '{}');
+            const lastPlay = JSON.parse(localStorage.getItem('headlines_last_play') || '{}');
             if (lastPlay.date === getTodayStr()) {
                 currentDayIndex = todayIndex;
                 dailyData = PUZZLE_DB[todayIndex];
@@ -413,7 +412,7 @@
                 endGame(true);
             } else {
                 loadDay(todayIndex); 
-                if (!localStorage.getItem('echoes_tutorial_done')) {
+                if (!localStorage.getItem('headlines_tutorial_done')) {
                     document.getElementById('introModal').classList.remove('hidden');
                 } else {
                     showPhraseModal();
@@ -431,7 +430,7 @@
             document.getElementById('dayIndicator').innerText = displayName;
             document.getElementById('headerDayLabel').innerText = displayName;
             precalculateDailyTarget(); 
-            if (isDevOverride) localStorage.removeItem('echoes_last_play');
+            if (isDevOverride) localStorage.removeItem('headlines_last_play');
             resetGameState();
         }
 
@@ -446,7 +445,7 @@
         }
 
         function finishTutorial() {
-            localStorage.setItem('echoes_tutorial_done', 'true');
+            localStorage.setItem('headlines_tutorial_done', 'true');
             closeModal('introModal');
             showPhraseModal();
         }
@@ -554,7 +553,7 @@
             if (won) { s.streak++; if (s.streak > s.maxStreak) s.maxStreak = s.streak; } else { s.streak = 0; }
             if (finalLen > s.bestWord) s.bestWord = finalLen;
             localStorage.setItem(STATS_KEY, JSON.stringify(s));
-            localStorage.setItem('echoes_last_play', JSON.stringify({ date: getTodayStr(), attempts: attempts }));
+            localStorage.setItem('headlines_last_play', JSON.stringify({ date: getTodayStr(), attempts: attempts }));
         }
 
         function shareResult() {
