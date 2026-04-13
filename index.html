@@ -68,13 +68,15 @@
             display: flex; flex-direction: column; align-items: center; 
         }
         
-        .score-banner { display: flex; width: 100%; max-width: 280px; background: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
+        .score-banner { display: flex; width: 100%; max-width: 280px; background: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 20px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
         .score-box { flex: 1; padding: 12px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
         .score-divider { width: 1px; background: #e2e8f0; }
         .score-label { font-size: 0.65rem; color: #94a3b8; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
         .score-value { font-size: 1.4rem; font-weight: 800; color: #334155; }
         .target-box .score-value { color: #6366f1; }
         .current-box .score-value { color: #10b981; }
+
+        .clue-box { background: #eef2ff; border: 2px dashed #a5b4fc; color: #3730a3; padding: 10px 15px; border-radius: 12px; font-family: 'Lora', serif; font-size: 1.1rem; font-weight: 700; text-align: center; margin-bottom: 15px; width: 100%; max-width: 300px; line-height: 1.4; }
 
         .input-display { font-size: 2.5rem; color: var(--text-main); height: 55px; margin-bottom: 15px; letter-spacing: 3px; text-align: center; border-bottom: 4px solid #e2e8f0; min-width: 220px; transition: all 0.2s; font-weight: 800; white-space: nowrap; }
         .input-display.pulse-low { border-color: #a5b4fc; } .input-display.pulse-med { border-color: #818cf8; transform: scale(1.02); color: #4f46e5; } .input-display.pulse-high { border-color: #6366f1; transform: scale(1.05); color: #4338ca; text-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); }
@@ -186,6 +188,9 @@
             80% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
             100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
         }
+
+        .echo-ring { position: absolute; border: 8px solid rgba(99, 102, 241, 0.8); border-radius: 50%; width: 50px; height: 50px; opacity: 1; animation: echo-expand 1.5s cubic-bezier(0.1, 0.8, 0.3, 1) forwards; }
+        @keyframes echo-expand { 0% { transform: scale(1); opacity: 1; border-width: 15px; } 100% { transform: scale(20); opacity: 0; border-width: 1px; } }
         
         .mega-particle { position: absolute; transform: translate(-50%, -50%); animation: particle-explode 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; }
         @keyframes particle-explode { 0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; } 100% { transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(1.5); opacity: 0; } }
@@ -227,6 +232,8 @@
                     <span class="score-value" id="guessesDisplay" style="color: #3730a3;">5</span>
                 </div>
             </div>
+
+            <div class="clue-box" id="clueDisplay"></div>
             
             <div class="input-display" id="inputDisplay"><span id="currentWord"></span><span class="cursor"></span></div>
             
@@ -271,18 +278,9 @@
     <div class="modal-overlay hidden" id="introModal" role="dialog" aria-modal="true">
         <div class="modal">
             <h2>The Golden Rule 🌟</h2>
-            <p style="color:#64748b; font-size: 0.95rem; margin-bottom: 10px; line-height: 1.4;">In Headlines, your goal is to guess Susie's <strong>Secret Word</strong> in 5 attempts or less! You can use the given tiles as many times as you want.</p>
+            <p style="color:#64748b; font-size: 0.95rem; margin-bottom: 10px; line-height: 1.4;">In Headlines, use the clues and tiles to guess Susie's <strong>Secret Word</strong> in 5 attempts or less! You can use the tiles as many times as you want.</p>
             <p style="color:#64748b; font-size: 0.95rem; margin-bottom: 15px; line-height: 1.4;">Every guess gives you hints. We'll tell you if Susie's word is <strong>longer/shorter</strong>, and where it falls in the <strong>A-Z dictionary</strong>.</p>
             <button class="control-btn btn-submit" style="width:100%;" onclick="finishTutorial()">Got It!</button>
-        </div>
-    </div>
-
-    <div class="modal-overlay hidden" id="phraseModal" role="dialog" aria-modal="true">
-        <div class="modal">
-            <h2 style="color: #4f46e5; margin-top: 0; font-size: 1.6rem; font-weight: 800;">Headline of the Day</h2>
-            <div id="dailyPhraseDisplay" style="font-size: 1.5rem; font-weight: 900; letter-spacing: 2px; color: #3730a3; margin: 20px 0; padding: 15px; background: #eef2ff; border: 2px dashed #a5b4fc; border-radius: 16px;"></div>
-            <p style="color:#64748b; font-size: 1rem; margin-bottom: 25px; line-height: 1.5;">Hunt down the 3 secret words connected to this headline. Use the length and dictionary hints to narrow it down!</p>
-            <button class="control-btn btn-submit" style="width:100%; box-shadow: 0 5px 0 #3730a3;" onclick="closeModal('phraseModal')">Play Now</button>
         </div>
     </div>
 
@@ -324,20 +322,21 @@
     </div>
 
     <script>
+        // --- 13 DAYS OF HAND-CURATED CROSSWORD CLUES ---
         const PUZZLE_DB = [
-            { id: 0, phrase: "LIMP TACO TIME", rounds: [{ letters: ["I", "L", "M", "P"], susieWord: "MILLI" }, { letters: ["A", "O", "C", "T"], susieWord: "CATBOAT" }, { letters: ["I", "E", "M", "T"], susieWord: "COMMITTEE" }] },
-            { id: 1, phrase: "OIL PRICE HIKE", rounds: [{ letters: ["I", "O", "L"], susieWord: "LOLL" }, { letters: ["E", "I", "C", "P", "R"], susieWord: "PIERCER" }, { letters: ["E", "I", "H", "K"], susieWord: "KEECH" }] },
-            { id: 2, phrase: "MORE ART THEFT", rounds: [{ letters: ["E", "O", "M", "R"], susieWord: "ROOMER" }, { letters: ["A", "R", "T"], susieWord: "TARTAR" }, { letters: ["E", "H", "T", "F"], susieWord: "TEETH" }] },
-            { id: 3, phrase: "BIG CHOC OVUM", rounds: [{ letters: ["I", "B", "G"], susieWord: "GIG" }, { letters: ["O", "C", "H"], susieWord: "HOOCH" }, { letters: ["O", "U", "V", "M"], susieWord: "MUUMUU" }] },
-            { id: 4, phrase: "MAY THE FORCE", rounds: [{ letters: ["A", "M", "Y"], susieWord: "MAMA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["E", "O", "C", "F", "R"], susieWord: "REEFER" }] },
-            { id: 5, phrase: "WHAT THE FLOCK", rounds: [{ letters: ["A", "H", "T", "W"], susieWord: "TATA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "C", "F", "K", "L"], susieWord: "COLLOCK" }] },
-            { id: 6, phrase: "TORY VAT LIAR", rounds: [{ letters: ["O", "R", "T", "Y"], susieWord: "TYRO" }, { letters: ["A", "T", "V"], susieWord: "TATA" }, { letters: ["A", "I", "L", "R"], susieWord: "RAIL" }] },
-            { id: 7, phrase: "PAINT THE TOWN", rounds: [{ letters: ["A", "I", "N", "P", "T"], susieWord: "INPAINT" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "N", "T", "W"], susieWord: "WONTON" }] },
-            { id: 8, phrase: "AIR SAUCE HEAT", rounds: [{ letters: ["A", "I", "R"], susieWord: "ARIA" }, { letters: ["A", "E", "U", "C", "S"], susieWord: "CAUSELESS" }, { letters: ["A", "E", "H", "T"], susieWord: "TEETHE" }] },
-            { id: 9, phrase: "MARY RAND JUMP", rounds: [{ letters: ["A", "M", "R", "Y"], susieWord: "MARRY" }, { letters: ["A", "D", "N", "R"], susieWord: "RADAR" }, { letters: ["U", "J", "M", "P"], susieWord: "JUMP" }] },
-            { id: 10, phrase: "SPACE SHIP DELAY", rounds: [{ letters: ["A", "E", "C", "P", "S"], susieWord: "CEASE" }, { letters: ["I", "H", "P", "S"], susieWord: "SHIP" }, { letters: ["A", "E", "D", "L", "Y"], susieWord: "DELAYED" }] },
-            { id: 11, phrase: "FRIED SOLAR PANEL", rounds: [{ letters: ["E", "I", "D", "F", "R"], susieWord: "REFIED" }, { letters: ["A", "O", "L", "R", "S"], susieWord: "SOLAR" }, { letters: ["A", "E", "L", "N", "P"], susieWord: "PANEL" }] },
-            { id: 12, phrase: "CELEB BAKE DANCE", rounds: [{ letters: ["E", "B", "C", "L"], susieWord: "BELLEE" }, { letters: ["A", "E", "B", "K"], susieWord: "BAKE" }, { letters: ["A", "E", "C", "D", "N"], susieWord: "DANCE" }] }
+            { id: 0, rounds: [{ letters: ["A", "R", "T"], susieWord: "TARTAR", clue: "A stubborn dental deposit." }, { letters: ["E", "P", "S"], susieWord: "PEEPS", clue: "Marshmallow treats popular around Easter." }, { letters: ["O", "N", "I"], susieWord: "ONION", clue: "A bulbous vegetable that might make you cry." }] },
+            { id: 1, rounds: [{ letters: ["E", "F", "R"], susieWord: "REFEREE", clue: "The official who oversees a sports match." }, { letters: ["O", "D", "V"], susieWord: "VOODOO", clue: "A syncretic religion associated with magic and dolls." }, { letters: ["A", "B", "O"], susieWord: "BAOBAB", clue: "An African tree with a massive, water-storing trunk." }] },
+            { id: 2, rounds: [{ letters: ["A", "P", "Y"], susieWord: "PAPAYA", clue: "A tropical fruit with orange flesh and black seeds." }, { letters: ["E", "R", "V"], susieWord: "REVERE", clue: "To feel deep respect or admiration for something." }, { letters: ["C", "U", "S"], susieWord: "CUSCUS", clue: "A large marsupial native to Australasia." }] },
+            { id: 3, rounds: [{ letters: ["A", "E", "B", "G"], susieWord: "BAGGAGE", clue: "Suitcases and bags packed for a trip." }, { letters: ["E", "I", "D", "V"], susieWord: "DIVIDED", clue: "Separated into parts or pieces." }, { letters: ["E", "O", "G", "S"], susieWord: "GOOSES", clue: "Pokes someone playfully in the ribs." }] },
+            { id: 4, rounds: [{ letters: ["E", "N", "S", "T"], susieWord: "TENSEST", clue: "The most tightly stretched or anxious." }, { letters: ["I", "M", "P", "S"], susieWord: "MISSISSIPPI", clue: "The US state known as the Magnolia State." }, { letters: ["E", "C", "F", "S", "U"], susieWord: "SUCCESSFUL", clue: "Accomplishing an aim or purpose." }] },
+            { id: 5, rounds: [{ letters: ["A", "E", "P", "R"], susieWord: "PREPARE", clue: "Make something ready for use or consideration." }, { letters: ["A", "E", "C", "L", "S"], susieWord: "SCALELESS", clue: "Lacking the small, overlapping plates found on fish." }, { letters: ["O", "P", "S", "E"], susieWord: "POSSESSES", clue: "Has as belonging to one; owns." }] },
+            { id: 6, rounds: [{ letters: ["A", "D", "E", "R", "S"], susieWord: "ADDRESSES", clue: "The locations of people's homes or businesses." }, { letters: ["D", "E", "F", "N"], susieWord: "DEFENDED", clue: "Protected from harm or danger." }, { letters: ["C", "L", "O", "S", "U"], susieWord: "COLOSSUS", clue: "A statue that is much bigger than life size." }] },
+            { id: 7, rounds: [{ letters: ["E", "I", "R", "T"], susieWord: "RETIREE", clue: "A person who has stopped working due to age." }, { letters: ["A", "B", "L", "O", "N"], susieWord: "BALLOON", clue: "A brightly colored rubber sac inflated with air." }, { letters: ["C", "E", "I", "N", "S"], susieWord: "INCENSES", clue: "Perfumes with a sweet-smelling smoke." }] },
+            { id: 8, rounds: [{ letters: ["A", "B", "N", "O", "S"], susieWord: "BABOONS", clue: "Large Old World monkeys with dog-like snouts." }, { letters: ["E", "I", "N", "S", "T"], susieWord: "INTESTINES", clue: "The lower part of the alimentary canal." }, { letters: ["A", "E", "L", "P", "T"], susieWord: "PALPATE", clue: "Examine a part of the body by touch." }] },
+            { id: 9, rounds: [{ letters: ["A", "L", "T"], susieWord: "TALL", clue: "Of great or more than average height." }, { letters: ["E", "O", "M", "R"], susieWord: "ROOMER", clue: "A person who rents a room in a house." }, { letters: ["A", "D", "N", "S", "T"], susieWord: "STANDS", clue: "Maintains an upright position on the feet." }] },
+            { id: 10, rounds: [{ letters: ["O", "N", "T"], susieWord: "ONTO", clue: "Moving to a location on the surface of something." }, { letters: ["A", "B", "E", "R"], susieWord: "BARBER", clue: "A person who cuts hair, especially men's." }, { letters: ["C", "E", "I", "P", "S"], susieWord: "SPICES", clue: "Aromatic substances used to flavor food." }] },
+            { id: 11, rounds: [{ letters: ["A", "C", "T"], susieWord: "TACT", clue: "Adroitness and sensitivity in dealing with others." }, { letters: ["E", "H", "O", "S"], susieWord: "SHOES", clue: "Coverings for the feet." }, { letters: ["B", "G", "I", "N", "R"], susieWord: "BRING", clue: "Take or go with someone or something to a place." }] },
+            { id: 12, rounds: [{ letters: ["E", "R", "V"], susieWord: "EVER", clue: "At all times; always." }, { letters: ["A", "L", "S", "T"], susieWord: "SALTS", clue: "Seasons or preserves with sodium chloride." }, { letters: ["C", "N", "O", "R", "W"], susieWord: "CROWN", clue: "A circular ornamental headdress worn by a monarch." }] }
         ];
 
         const MAX_ROUNDS = 3;
@@ -380,8 +379,6 @@
                 loadDay(todayIndex); 
                 if (!localStorage.getItem('headlines_tutorial_done')) {
                     document.getElementById('introModal').classList.remove('hidden');
-                } else {
-                    showPhraseModal();
                 }
             }
             setupKeyboard();
@@ -407,15 +404,9 @@
             loadRound(currentRound);
         }
 
-        function showPhraseModal() {
-            document.getElementById('dailyPhraseDisplay').innerText = dailyData.phrase;
-            document.getElementById('phraseModal').classList.remove('hidden');
-        }
-
         function finishTutorial() {
             localStorage.setItem('headlines_tutorial_done', 'true');
             closeModal('introModal');
-            showPhraseModal();
         }
 
         function typeChar(c) {
@@ -483,6 +474,7 @@
             
             document.getElementById('stageDisplay').innerText = `${idx + 1}/3`;
             document.getElementById('guessesDisplay').innerText = MAX_GUESSES;
+            document.getElementById('clueDisplay').innerText = rData.clue;
             
             const grid = document.getElementById('lettersGrid'); grid.classList.add('fade-out');
             setTimeout(() => { renderLetters(rData.letters); grid.classList.remove('fade-out'); }, 400);
@@ -571,7 +563,7 @@
                 txt += `S${i+1}: ${icon} ${score}\n`;
             });
             const wordsFound = dailyHistory.filter(h => h.won).length;
-            const shareText = `Headlines 🗞️\n${dailyData.dynamicDayName}\n${dailyData.phrase}\n\n${txt}\nFound: ${wordsFound}/3\nPlay here: https://venvoit.github.io/echo/`;
+            const shareText = `Headlines 🗞️\n${dailyData.dynamicDayName}\n\n${txt}\nFound: ${wordsFound}/3\nPlay here: https://venvoit.github.io/echo/`;
             
             if (!navigator.clipboard) { fallbackCopyTextToClipboard(shareText); return; }
             navigator.clipboard.writeText(shareText).then(() => showToast("Result copied!", "📋")).catch(() => fallbackCopyTextToClipboard(shareText));
