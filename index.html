@@ -60,16 +60,11 @@
             backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; transition: all 0.2s; flex-shrink: 0; 
         }
         .stats-btn:active { transform: scale(0.95); }
-        .round-indicator { 
-            background: rgba(255,255,255,0.25); padding: 6px 12px; border-radius: 20px; backdrop-filter: blur(8px); 
-            border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-weight: 800; 
-            font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; white-space: nowrap;
-        }
 
         #mainGameArea { width: 100%; display: flex; flex-direction: column; align-items: center; }
         .game-card { 
             background: var(--glass-panel); width: 94%; max-width: 450px; border-radius: 28px; 
-            padding: 25px 25px 35px 25px; margin-bottom: 20px; margin-top: 10px; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,1); 
+            padding: 25px 25px 30px 25px; margin-bottom: 20px; margin-top: 10px; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,1); 
             display: flex; flex-direction: column; align-items: center; 
         }
         
@@ -85,12 +80,6 @@
         .input-display.pulse-low { border-color: #a5b4fc; } .input-display.pulse-med { border-color: #818cf8; transform: scale(1.02); color: #4f46e5; } .input-display.pulse-high { border-color: #6366f1; transform: scale(1.05); color: #4338ca; text-shadow: 0 4px 15px rgba(99, 102, 241, 0.3); }
         .input-display.valid { color: var(--accent); border-color: var(--accent); transform: scale(1.1); } .input-display.invalid { color: #ef4444; border-color: #ef4444; animation: shake 0.4s; }
         .cursor { animation: blink 1s steps(2) infinite; border-right: 3px solid #6366f1; margin-left: 2px; }
-
-        .meter-wrapper { width: 100%; max-width: 280px; margin-bottom: 25px; }
-        .meter-labels { display: flex; justify-content: space-between; font-size: 0.7rem; text-transform: uppercase; font-weight: 800; color: #94a3b8; margin-bottom: 6px; letter-spacing: 0.5px; }
-        .strength-meter-bg { width: 100%; height: 10px; background: #e2e8f0; border-radius: 5px; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); }
-        .strength-meter-fill { height: 100%; width: 0%; background: #6366f1; border-radius: 5px; transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.4s; }
-        .strength-meter-fill.maxed { background: linear-gradient(90deg, #10b981, #0ea5e9, #6366f1, #8b5cf6, #d946ef); background-size: 200% 200%; animation: gradientShift 2s ease infinite; }
 
         .shape-container { position: relative; width: 220px; height: 220px; margin: 10px auto 30px; transition: opacity 0.4s ease; }
         .shape-container.fade-out { opacity: 0; pointer-events: none; }
@@ -111,13 +100,12 @@
         .history-card { background: var(--glass-panel); width: 94%; max-width: 450px; border-radius: 28px; padding: 20px 25px; margin-bottom: 20px; box-shadow: 0 10px 30px -5px rgba(0,0,0,0.15), inset 0 2px 0 rgba(255,255,255,1); }
         .history-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
         .history-title { font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #94a3b8; letter-spacing: 1px; }
-        .history-hint { font-size: 0.75rem; color: var(--primary-btn); background: #eef2ff; padding: 4px 10px; border-radius: 12px; font-weight: 600; animation: pulseHint 2s infinite; }
-        .attempt-row { display: flex; justify-content: space-between; align-items: center; padding: 16px 15px; margin-bottom: 8px; background: white; border: 1px solid #e2e8f0; border-radius: 16px; font-size: 1.15rem; color: var(--text-main); font-weight: 700; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: all 0.2s; cursor: pointer; }
+        .attempt-row { display: flex; flex-direction: column; padding: 12px 15px; margin-bottom: 8px; background: white; border: 1px solid #e2e8f0; border-radius: 16px; transition: all 0.2s; cursor: pointer; }
         .attempt-row.clickable:hover { border-color: #c7d2fe; background: #f8fafc; transform: translateX(4px); }
         .attempt-row.clickable:active { transform: scale(0.98); }
-        .round-badge { font-size: 0.75rem; background:#f1f5f9; color:#64748b; padding:4px 8px; border-radius:8px; text-transform:uppercase; font-weight:800; }
-        .attempt-score { background: #eef2ff; color: #4f46e5; padding: 4px 12px; border-radius: 12px; font-weight: 800; font-size: 1rem; }
-        .empty-slot { background: transparent; border: 2px dashed #cbd5e1; color: #94a3b8; font-weight: 600; box-shadow: none; cursor: default; }
+        .attempt-row.empty-slot { background: transparent; border: 2px dashed #cbd5e1; color: #94a3b8; font-weight: 600; flex-direction: row; justify-content: center; padding: 16px; cursor: default; }
+        .hint-badge { background: #eef2ff; color: #4f46e5; padding: 4px 8px; border-radius: 8px; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 4px; }
+        .hint-badge.correct { background: #d1fae5; color: #059669; }
 
         .comparison-container { background: #f8fafc; border-radius: 16px; padding: 15px; margin-bottom: 20px; border: 1px solid #e2e8f0; text-align: left; }
         .comp-label { font-size: 0.7rem; color: #64748b; text-transform: uppercase; font-weight: bold; display: flex; justify-content: space-between; margin-bottom: 10px; }
@@ -128,13 +116,6 @@
         .comp-best { color: #10b981; font-weight: 700; flex: 1; text-align: center; }
 
         .full-screen-ad { background: var(--glass-panel); width: 94%; max-width: 450px; border-radius: 28px; padding: 40px 25px; margin-top: 20px; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,1); display: flex; flex-direction: column; align-items: center; text-align: center; animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-
-        .tut-board { background: #f8fafc; padding: 25px 20px; border-radius: 24px; border: 2px solid #e2e8f0; margin: 20px 0; }
-        .tut-input { font-size: 2.2rem; font-weight: 800; letter-spacing: 5px; color: #4f46e5; border-bottom: 3px solid #cbd5e1; margin-bottom: 25px; min-height: 50px; display: flex; justify-content: center; align-items: center; transition: all 0.3s; }
-        .tut-input.invalid { color: #ef4444; border-color: #ef4444; animation: shake 0.4s; }
-        .tut-tiles { display: flex; gap: 12px; justify-content: center; padding-bottom: 10px;}
-        .tut-tile { width: 60px; height: 68px; border-radius: 14px; background: linear-gradient(180deg, var(--tile-color-top) 0%, var(--tile-color-bottom) 100%); border: 1px solid var(--tile-border); color: var(--tile-text); font-size: 1.9rem; font-family: 'Varela Round', sans-serif; font-weight: 900; cursor: pointer; display: flex; align-items: center; justify-content: center; text-shadow: 0 1px 1px rgba(255,255,255,0.9), 0 -1px 1px rgba(0,0,0,0.1); box-shadow: 0 6px 0 var(--tile-shadow-3d), inset 0 2px 0 rgba(255,255,255,1); transition: transform 0.1s, box-shadow 0.1s; -webkit-tap-highlight-color: transparent; }
-        .tut-tile:active { transform: translateY(6px); box-shadow: 0 0 0 var(--tile-shadow-3d); }
 
         .toast-container { position: fixed; top: 20px; left: 50%; transform: translate(-50%, -20px); background: #1e293b; color: white; padding: 14px 24px; border-radius: 30px; font-weight: 700; font-size: 0.95rem; box-shadow: 0 10px 25px rgba(0,0,0,0.25); z-index: 3000; opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: flex; align-items: center; gap: 10px; }
         .toast-container.show { opacity: 1; transform: translate(-50%, 0); }
@@ -170,6 +151,11 @@
         .ad-btn:active { transform: scale(0.95); box-shadow: none; }
         .apple-btn { background: #1e293b; } .google-btn { background: #10b981; }
 
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+        @keyframes popIn { 0% { transform: scale(0.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+        @keyframes blink { 50% { opacity: 0; } }
+        @keyframes gradientShift { 0% { background-position: 0% 50%;} 50% { background-position: 100% 50%;} 100% { background-position: 0% 50%;} }
+        
         @keyframes screen-shake {
             0% { transform: translate(1px, 1px) rotate(0deg); }
             10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -200,9 +186,6 @@
             80% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
             100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
         }
-
-        .echo-ring { position: absolute; border: 8px solid rgba(99, 102, 241, 0.8); border-radius: 50%; width: 50px; height: 50px; opacity: 1; animation: echo-expand 1.5s cubic-bezier(0.1, 0.8, 0.3, 1) forwards; }
-        @keyframes echo-expand { 0% { transform: scale(1); opacity: 1; border-width: 15px; } 100% { transform: scale(20); opacity: 0; border-width: 1px; } }
         
         .mega-particle { position: absolute; transform: translate(-50%, -50%); animation: particle-explode 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; }
         @keyframes particle-explode { 0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; } 100% { transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(1.5); opacity: 0; } }
@@ -227,7 +210,6 @@
             <div class="logo-sub">Susie Dent &bull; <span id="headerDayLabel"></span></div>
         </div>
         <div class="header-right">
-            <div class="round-indicator" id="roundIndicator">S 1/3</div>
             <button class="stats-btn" onclick="openStats()" title="View Stats">📊</button>
         </div>
     </header>
@@ -236,29 +218,29 @@
         <div class="game-card">
             <div class="score-banner">
                 <div class="score-box target-box">
-                    <span class="score-label">Target</span>
-                    <span class="score-value" id="dailyTargetDisplay">--</span>
+                    <span class="score-label">Stage</span>
+                    <span class="score-value" id="stageDisplay">1/3</span>
                 </div>
                 <div class="score-divider"></div>
                 <div class="score-box current-box">
-                    <span class="score-label">Total Pts</span>
-                    <span class="score-value" id="currentTotalScore">0</span>
+                    <span class="score-label">Guesses Left</span>
+                    <span class="score-value" id="guessesDisplay" style="color: #3730a3;">5</span>
                 </div>
             </div>
+            
             <div class="input-display" id="inputDisplay"><span id="currentWord"></span><span class="cursor"></span></div>
-            <div class="meter-wrapper">
-                <div class="meter-labels"><span>Strength</span><span>Target Length</span></div>
-                <div class="strength-meter-bg"><div class="strength-meter-fill" id="meterFill"></div></div>
-            </div>
+            
             <div class="shape-container shape-triangle" id="lettersGrid"></div>
+            
             <div class="controls">
                 <button class="control-btn btn-del" id="btnDel" onclick="deleteChar()">Del</button>
                 <button class="control-btn btn-submit" id="submitBtn" onclick="submitWord()">Submit</button>
             </div>
         </div>
+        
         <div class="history-card">
             <div class="history-header">
-                <div class="history-title">Submission Board</div>
+                <div class="history-title">Guess Board</div>
                 <div class="history-hint" id="dictHint" style="display:none;">Tap a word for definition!</div>
             </div>
             <div id="historyList"></div>
@@ -281,7 +263,6 @@
             <button class="dev-btn" onclick="prevDay()"> &lt; </button>
             <div class="dev-label" id="dayIndicator" style="width:70px; text-align:center;">DAY 1</div>
             <button class="dev-btn" onclick="nextDay()"> &gt; </button>
-            <button class="dev-btn" style="background:#8b5cf6;" onclick="openCheat()" title="Cheat Menu"> 💡 </button>
             <button class="dev-btn" style="background:#b91c1c;" onclick="resetDay()" title="Reset Day"> ↻ </button>
         </div>
         <button class="dev-toggle" onclick="toggleDev()" title="Toggle Dev Menu">⚙️</button>
@@ -290,25 +271,17 @@
     <div class="modal-overlay hidden" id="introModal" role="dialog" aria-modal="true">
         <div class="modal">
             <h2>The Golden Rule 🌟</h2>
-            <p style="color:#64748b; font-size: 0.95rem; margin-bottom: 10px; line-height: 1.4;">In Headlines, you can use the same tile <strong>as many times as you want!</strong><br>Beat all 3 stages by hitting the combined points target.</p>
-            <p style="color:#334155; font-weight: 700; margin-bottom: 5px;">Try it! Spell <span style="color:#6366f1; font-weight:800; font-size: 1.1rem;">TEST</span> using only these 3 tiles:</p>
-            <div class="tut-board">
-                <div class="tut-input" id="tutInput"></div>
-                <div class="tut-tiles">
-                    <button class="tut-tile" onclick="tutType('T')">T</button><button class="tut-tile" onclick="tutType('E')">E</button><button class="tut-tile" onclick="tutType('S')">S</button>
-                </div>
-                <button class="control-btn btn-del" style="width: 100%; margin-top: 25px; padding: 12px; box-shadow: 0 4px 0 rgba(0,0,0,0.1);" onclick="tutDel()">Delete</button>
-            </div>
-            <div id="tutSuccess" style="display:none; color: #10b981; font-weight: 800; margin-bottom: 20px; font-size: 1.1rem; animation: popIn 0.3s;">Perfect! You tapped 'T' twice.</div>
-            <button class="control-btn btn-submit" id="tutStartBtn" style="width:100%; opacity: 0.5; pointer-events: none; transition: all 0.3s;" onclick="finishTutorial()">Spell TEST to Continue</button>
+            <p style="color:#64748b; font-size: 0.95rem; margin-bottom: 10px; line-height: 1.4;">In Headlines, your goal is to guess Susie's <strong>Secret Word</strong> in 5 attempts or less! You can use the given tiles as many times as you want.</p>
+            <p style="color:#64748b; font-size: 0.95rem; margin-bottom: 15px; line-height: 1.4;">Every guess gives you hints. We'll tell you if Susie's word is <strong>longer/shorter</strong>, and where it falls in the <strong>A-Z dictionary</strong>.</p>
+            <button class="control-btn btn-submit" style="width:100%;" onclick="finishTutorial()">Got It!</button>
         </div>
     </div>
 
     <div class="modal-overlay hidden" id="phraseModal" role="dialog" aria-modal="true">
         <div class="modal">
-            <h2 style="color: #4f46e5; margin-top: 0; font-size: 1.6rem; font-weight: 800;">Phrase of the Day</h2>
+            <h2 style="color: #4f46e5; margin-top: 0; font-size: 1.6rem; font-weight: 800;">Headline of the Day</h2>
             <div id="dailyPhraseDisplay" style="font-size: 1.5rem; font-weight: 900; letter-spacing: 2px; color: #3730a3; margin: 20px 0; padding: 15px; background: #eef2ff; border: 2px dashed #a5b4fc; border-radius: 16px;"></div>
-            <p style="color:#64748b; font-size: 1rem; margin-bottom: 25px; line-height: 1.5;">Make the <strong>longest possible words</strong> with the given letters for each round, in order to beat the target score!</p>
+            <p style="color:#64748b; font-size: 1rem; margin-bottom: 25px; line-height: 1.5;">Hunt down the 3 secret words connected to this headline. Use the length and dictionary hints to narrow it down!</p>
             <button class="control-btn btn-submit" style="width:100%; box-shadow: 0 5px 0 #3730a3;" onclick="closeModal('phraseModal')">Play Now</button>
         </div>
     </div>
@@ -320,24 +293,18 @@
         </div>
     </div>
 
-    <div class="modal-overlay hidden" id="cheatModal" role="dialog" aria-modal="true">
-        <div class="modal">
-            <h2 style="color: #8b5cf6;">Live Dictionary 🕵️</h2>
-            <div id="cheatList" style="text-align: left; max-height: 50vh; overflow-y: auto; margin-bottom: 20px; padding: 10px; background: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0;"></div>
-            <button class="control-btn btn-submit" style="width:100%; background: #8b5cf6;" onclick="closeModal('cheatModal')">Hide Secrets</button>
-        </div>
-    </div>
-
     <div class="modal-overlay hidden" id="gameOverModal" role="dialog" aria-modal="true">
         <div class="modal" style="width: 420px; max-width: 95%;">
-            <h2 id="endGameTitle">That's a Wrap!</h2>
-            <div class="big-rank" id="finalScore" style="font-size: 3rem; font-weight: 900; color: #4f46e5;">0</div>
-            <div style="font-size: 1.1rem; color: #64748b; font-weight:800; margin-bottom: 20px;" id="finalRank">Target: 0</div>
+            <h2 id="endGameTitle">Headlines Complete!</h2>
+            <div class="big-rank" id="finalScore" style="font-size: 2.5rem; font-weight: 900; color: #4f46e5; margin-bottom: 5px;">0/3 Found</div>
+            <p style="color:#64748b; margin-top:0; font-size:0.9rem; margin-bottom: 20px;">Secret Words Revealed</p>
+            
             <div class="comparison-container">
-                <div class="comp-label"><span style="width:40px;"></span><span style="flex:1; text-align:center;">You</span><span style="flex:1; text-align:center; color:#10b981;">Susie</span></div>
+                <div class="comp-label"><span style="width:50px;">Stage</span><span style="flex:1; text-align:center;">Susie's Word</span><span style="width:60px; text-align:right;">Guesses</span></div>
                 <div id="endGameComparison"></div>
             </div>
-            <button class="control-btn btn-submit" style="width:100%; margin-bottom: 12px;" onclick="shareResult()">Share Score 📤</button>
+            
+            <button class="control-btn btn-submit" style="width:100%; margin-bottom: 12px;" onclick="shareResult()">Share Results 📤</button>
             <button class="control-btn" style="width:100%; background: #f1f5f9; color: #4f46e5; margin-bottom: 15px;" onclick="showFullScreenAd()">Continue ➡️</button>
             <button class="control-btn btn-del" style="background:transparent; border:none; box-shadow:none; padding: 0; font-size: 0.9rem;" onclick="openStats()">View Ratings 📊</button>
         </div>
@@ -348,9 +315,9 @@
             <h2>Your Ratings</h2>
             <div class="stats-grid">
                 <div class="stat-box"><div class="stat-val" id="statPlayed">0</div><div class="stat-label">Played</div></div>
-                <div class="stat-box"><div class="stat-val" id="statStreak">0</div><div class="stat-label">Streak</div></div>
+                <div class="stat-box"><div class="stat-val" id="statFound">0</div><div class="stat-label">Words Found</div></div>
+                <div class="stat-box"><div class="stat-val" id="statStreak">0</div><div class="stat-label">Day Streak</div></div>
                 <div class="stat-box"><div class="stat-val" id="statMaxStreak">0</div><div class="stat-label">Max Streak</div></div>
-                <div class="stat-box"><div class="stat-val" id="statBestWord">0</div><div class="stat-label">Best Word</div></div>
             </div>
             <button class="control-btn btn-del" style="width:100%; margin-top:15px;" onclick="showFullScreenAd()">Close Window</button>
         </div>
@@ -358,29 +325,30 @@
 
     <script>
         const PUZZLE_DB = [
-            { id: 0, target: 17, phrase: "LIMP TACO TIME", rounds: [{ letters: ["I", "L", "M", "P"], susieWord: "MILLI" }, { letters: ["A", "O", "C", "T"], susieWord: "CATBOAT" }, { letters: ["I", "E", "M", "T"], susieWord: "COMMITTEE" }] },
-            { id: 1, target: 17, phrase: "OIL PRICE HIKE", rounds: [{ letters: ["I", "O", "L"], susieWord: "LOLL" }, { letters: ["E", "I", "C", "P", "R"], susieWord: "PIERCER" }, { letters: ["E", "I", "H", "K"], susieWord: "KEECH" }] },
-            { id: 2, target: 17, phrase: "MORE ART THEFT", rounds: [{ letters: ["E", "O", "M", "R"], susieWord: "ROOMER" }, { letters: ["A", "R", "T"], susieWord: "TARTAR" }, { letters: ["E", "H", "T", "F"], susieWord: "TEETH" }] },
-            { id: 3, target: 12, phrase: "BIG CHOC OVUM", rounds: [{ letters: ["I", "B", "G"], susieWord: "GIG" }, { letters: ["O", "C", "H"], susieWord: "HOOCH" }, { letters: ["O", "U", "V", "M"], susieWord: "MUUMUU" }] },
-            { id: 4, target: 17, phrase: "MAY THE FORCE", rounds: [{ letters: ["A", "M", "Y"], susieWord: "MAMA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["E", "O", "C", "F", "R"], susieWord: "REEFER" }] },
-            { id: 5, target: 17, phrase: "WHAT THE FLOCK", rounds: [{ letters: ["A", "H", "T", "W"], susieWord: "TATA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "C", "F", "K", "L"], susieWord: "COLLOCK" }] },
-            { id: 6, target: 15, phrase: "TORY VAT LIAR", rounds: [{ letters: ["O", "R", "T", "Y"], susieWord: "TYRO" }, { letters: ["A", "T", "V"], susieWord: "TATA" }, { letters: ["A", "I", "L", "R"], susieWord: "RAIL" }] },
-            { id: 7, target: 18, phrase: "PAINT THE TOWN", rounds: [{ letters: ["A", "I", "N", "P", "T"], susieWord: "INPAINT" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "N", "T", "W"], susieWord: "WONTON" }] },
-            { id: 8, target: 18, phrase: "AIR SAUCE HEAT", rounds: [{ letters: ["A", "I", "R"], susieWord: "ARIA" }, { letters: ["A", "E", "U", "C", "S"], susieWord: "CAUSELESS" }, { letters: ["A", "E", "H", "T"], susieWord: "TEETHE" }] },
-            { id: 9, target: 17, phrase: "MARY RAND JUMP", rounds: [{ letters: ["A", "M", "R", "Y"], susieWord: "MARRY" }, { letters: ["A", "D", "N", "R"], susieWord: "RADAR" }, { letters: ["U", "J", "M", "P"], susieWord: "JUMP" }] },
-            { id: 10, target: 17, phrase: "SPACE SHIP DELAY", rounds: [{ letters: ["A", "E", "C", "P", "S"], susieWord: "CEASE" }, { letters: ["I", "H", "P", "S"], susieWord: "SHIP" }, { letters: ["A", "E", "D", "L", "Y"], susieWord: "DELAYED" }] },
-            { id: 11, target: 17, phrase: "FRIED SOLAR PANEL", rounds: [{ letters: ["E", "I", "D", "F", "R"], susieWord: "REFIED" }, { letters: ["A", "O", "L", "R", "S"], susieWord: "SOLAR" }, { letters: ["A", "E", "L", "N", "P"], susieWord: "PANEL" }] },
-            { id: 12, target: 17, phrase: "CELEB BAKE DANCE", rounds: [{ letters: ["E", "B", "C", "L"], susieWord: "BELLEE" }, { letters: ["A", "E", "B", "K"], susieWord: "BAKE" }, { letters: ["A", "E", "C", "D", "N"], susieWord: "DANCE" }] }
+            { id: 0, phrase: "LIMP TACO TIME", rounds: [{ letters: ["I", "L", "M", "P"], susieWord: "MILLI" }, { letters: ["A", "O", "C", "T"], susieWord: "CATBOAT" }, { letters: ["I", "E", "M", "T"], susieWord: "COMMITTEE" }] },
+            { id: 1, phrase: "OIL PRICE HIKE", rounds: [{ letters: ["I", "O", "L"], susieWord: "LOLL" }, { letters: ["E", "I", "C", "P", "R"], susieWord: "PIERCER" }, { letters: ["E", "I", "H", "K"], susieWord: "KEECH" }] },
+            { id: 2, phrase: "MORE ART THEFT", rounds: [{ letters: ["E", "O", "M", "R"], susieWord: "ROOMER" }, { letters: ["A", "R", "T"], susieWord: "TARTAR" }, { letters: ["E", "H", "T", "F"], susieWord: "TEETH" }] },
+            { id: 3, phrase: "BIG CHOC OVUM", rounds: [{ letters: ["I", "B", "G"], susieWord: "GIG" }, { letters: ["O", "C", "H"], susieWord: "HOOCH" }, { letters: ["O", "U", "V", "M"], susieWord: "MUUMUU" }] },
+            { id: 4, phrase: "MAY THE FORCE", rounds: [{ letters: ["A", "M", "Y"], susieWord: "MAMA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["E", "O", "C", "F", "R"], susieWord: "REEFER" }] },
+            { id: 5, phrase: "WHAT THE FLOCK", rounds: [{ letters: ["A", "H", "T", "W"], susieWord: "TATA" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "C", "F", "K", "L"], susieWord: "COLLOCK" }] },
+            { id: 6, phrase: "TORY VAT LIAR", rounds: [{ letters: ["O", "R", "T", "Y"], susieWord: "TYRO" }, { letters: ["A", "T", "V"], susieWord: "TATA" }, { letters: ["A", "I", "L", "R"], susieWord: "RAIL" }] },
+            { id: 7, phrase: "PAINT THE TOWN", rounds: [{ letters: ["A", "I", "N", "P", "T"], susieWord: "INPAINT" }, { letters: ["E", "H", "T"], susieWord: "TEETH" }, { letters: ["O", "N", "T", "W"], susieWord: "WONTON" }] },
+            { id: 8, phrase: "AIR SAUCE HEAT", rounds: [{ letters: ["A", "I", "R"], susieWord: "ARIA" }, { letters: ["A", "E", "U", "C", "S"], susieWord: "CAUSELESS" }, { letters: ["A", "E", "H", "T"], susieWord: "TEETHE" }] },
+            { id: 9, phrase: "MARY RAND JUMP", rounds: [{ letters: ["A", "M", "R", "Y"], susieWord: "MARRY" }, { letters: ["A", "D", "N", "R"], susieWord: "RADAR" }, { letters: ["U", "J", "M", "P"], susieWord: "JUMP" }] },
+            { id: 10, phrase: "SPACE SHIP DELAY", rounds: [{ letters: ["A", "E", "C", "P", "S"], susieWord: "CEASE" }, { letters: ["I", "H", "P", "S"], susieWord: "SHIP" }, { letters: ["A", "E", "D", "L", "Y"], susieWord: "DELAYED" }] },
+            { id: 11, phrase: "FRIED SOLAR PANEL", rounds: [{ letters: ["E", "I", "D", "F", "R"], susieWord: "REFIED" }, { letters: ["A", "O", "L", "R", "S"], susieWord: "SOLAR" }, { letters: ["A", "E", "L", "N", "P"], susieWord: "PANEL" }] },
+            { id: 12, phrase: "CELEB BAKE DANCE", rounds: [{ letters: ["E", "B", "C", "L"], susieWord: "BELLEE" }, { letters: ["A", "E", "B", "K"], susieWord: "BAKE" }, { letters: ["A", "E", "C", "D", "N"], susieWord: "DANCE" }] }
         ];
 
         const MAX_ROUNDS = 3;
-        const STATS_KEY = 'headlines_susie_stats'; 
+        const MAX_GUESSES = 5;
+        const STATS_KEY = 'headlines_wordle_stats'; 
         
         let currentDayIndex = 0; let currentRound = 0; let currentInput = ""; 
-        let attempts = []; let dailyData = PUZZLE_DB[0];
+        let currentGuesses = []; let dailyHistory = []; 
+        let dailyData = PUZZLE_DB[0];
         let FULL_DICTIONARY = []; let currentValidSet = new Set();
-        let currentMaxLen = 0; let toastTimeout;
-        let isSubmitting = false;
+        let toastTimeout; let isSubmitting = false;
 
         window.onload = () => {
             fetch('https://raw.githubusercontent.com/jesstess/Scrabble/master/scrabble/sowpods.txt')
@@ -400,14 +368,12 @@
             const daysElapsed = Math.floor((Date.now() - epoch) / 86400000);
             const todayIndex = daysElapsed % PUZZLE_DB.length;
             
-            const lastPlay = JSON.parse(localStorage.getItem('headlines_last_play') || '{}');
+            const lastPlay = JSON.parse(localStorage.getItem('headlines_daily_save') || '{}');
             if (lastPlay.date === getTodayStr()) {
                 currentDayIndex = todayIndex;
                 dailyData = PUZZLE_DB[todayIndex];
-                attempts = lastPlay.attempts;
-                const realDayName = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toUpperCase();
-                dailyData.dynamicDayName = realDayName;
-                precalculateDailyTarget();
+                dailyHistory = lastPlay.history;
+                dailyData.dynamicDayName = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toUpperCase();
                 document.getElementById('headerDayLabel').innerText = dailyData.dynamicDayName;
                 endGame(true);
             } else {
@@ -424,31 +390,21 @@
         function loadDay(idx, isDevOverride = false) {
             if(idx < 0) idx = PUZZLE_DB.length - 1; if(idx >= PUZZLE_DB.length) idx = 0;
             currentDayIndex = idx; dailyData = PUZZLE_DB[idx];
-            const realDayName = new Date().toLocaleDateString('en-US', { weekday: 'long' }).toUpperCase();
-            const displayName = isDevOverride ? `PUZZLE ${idx + 1}` : realDayName;
-            dailyData.dynamicDayName = displayName;
-            document.getElementById('dayIndicator').innerText = displayName;
-            document.getElementById('headerDayLabel').innerText = displayName;
-            precalculateDailyTarget(); 
-            if (isDevOverride) localStorage.removeItem('headlines_last_play');
+            dailyData.dynamicDayName = isDevOverride ? `PUZZLE ${idx + 1}` : new Date().toLocaleDateString('en-US', { weekday: 'long' }).toUpperCase();
+            document.getElementById('dayIndicator').innerText = dailyData.dynamicDayName;
+            document.getElementById('headerDayLabel').innerText = dailyData.dynamicDayName;
+            if (isDevOverride) localStorage.removeItem('headlines_daily_save');
             resetGameState();
         }
 
         function resetGameState() {
-            currentRound = 0; attempts = []; isSubmitting = false;
-            document.getElementById('currentTotalScore').innerText = "0";
+            currentRound = 0; dailyHistory = []; isSubmitting = false;
             document.getElementById('mainGameArea').classList.remove('hidden');
             document.getElementById('fullScreenAd').classList.add('hidden');
             const btn = document.getElementById('submitBtn'); btn.disabled = false; btn.innerText = "Submit";
             document.getElementById('gameOverModal').classList.add('hidden');
             document.getElementById('statsModal').classList.add('hidden');
-            document.getElementById('dictHint').style.display = 'none';
             loadRound(currentRound);
-        }
-
-        function precalculateDailyTarget() {
-            dailyData.targetScore = dailyData.target || 17;
-            document.getElementById('dailyTargetDisplay').innerText = dailyData.targetScore;
         }
 
         function showPhraseModal() {
@@ -478,29 +434,56 @@
         function submitWord() {
             if (currentRound >= MAX_ROUNDS || isSubmitting) return;
             const w = currentInput.toLowerCase(); const box = document.getElementById('inputDisplay');
-            if (w.length < 3 || !currentValidSet.has(w)) {
-                box.classList.add('invalid'); setTimeout(() => box.classList.remove('invalid'), 400); return;
+            const target = dailyData.rounds[currentRound].susieWord.toLowerCase();
+
+            if (w.length < 3 || !currentValidSet.has(w) || currentGuesses.some(g => g.word === w)) {
+                box.classList.add('invalid'); setTimeout(() => box.classList.remove('invalid'), 400);
+                if (currentGuesses.some(g => g.word === w)) showToast("Already guessed!");
+                return;
             }
+
             isSubmitting = true; box.classList.add('valid'); popMiniParticles(w.length);
-            attempts.push({ word: w, len: w.length, round: currentRound + 1 });
-            document.getElementById('currentTotalScore').innerText = attempts.reduce((sum, a) => sum + a.len, 0);
+
+            const lenDiff = w.length - target.length;
+            const alphaDiff = w.localeCompare(target);
+            currentGuesses.push({ word: w, lenDiff, alphaDiff });
+            
+            document.getElementById('guessesDisplay').innerText = (MAX_GUESSES - currentGuesses.length);
             renderHistory();
-            if(attempts.length === 1) document.getElementById('dictHint').style.display = 'block'; 
-            if (currentRound + 1 < MAX_ROUNDS) showToast("Stage Complete! ✅", "👍");
-            setTimeout(() => {
-                currentRound++;
-                if (currentRound >= MAX_ROUNDS) endGame(false); 
-                else loadRound(currentRound);
+
+            if (w === target) {
+                showToast("You found it! 🌟", "🎉");
+                dailyHistory.push({ target: target, won: true, guessCount: currentGuesses.length });
+                if(currentGuesses.length === 1) document.getElementById('dictHint').style.display = 'block';
+                setTimeout(() => { nextRound(); }, 1500);
+            } else if (currentGuesses.length >= MAX_GUESSES) {
+                showToast(`Out of guesses! Word was ${target.toUpperCase()}`, "❌");
+                dailyHistory.push({ target: target, won: false, guessCount: 5 });
+                setTimeout(() => { nextRound(); }, 2500);
+            } else {
+                currentInput = "";
+                setTimeout(() => { updateDisplay(); isSubmitting = false; }, 600);
+            }
+        }
+
+        function nextRound() {
+            currentRound++;
+            if (currentRound >= MAX_ROUNDS) {
+                endGame(false);
+            } else {
+                loadRound(currentRound);
                 isSubmitting = false;
-            }, 800);
+            }
         }
 
         function loadRound(idx) {
-            currentInput = ""; const rData = dailyData.rounds[idx];
+            currentInput = ""; currentGuesses = []; const rData = dailyData.rounds[idx];
             const allowedSet = new Set(rData.letters.map(l => l.toLowerCase()));
             currentValidSet = new Set(FULL_DICTIONARY.filter(w => [...w].every(c => allowedSet.has(c))));
-            currentMaxLen = rData.susieWord.length;
-            document.getElementById('roundIndicator').innerText = `S ${idx + 1}/3`;
+            
+            document.getElementById('stageDisplay').innerText = `${idx + 1}/3`;
+            document.getElementById('guessesDisplay').innerText = MAX_GUESSES;
+            
             const grid = document.getElementById('lettersGrid'); grid.classList.add('fade-out');
             setTimeout(() => { renderLetters(rData.letters); grid.classList.remove('fade-out'); }, 400);
             renderHistory(); updateDisplay();
@@ -522,63 +505,74 @@
             box.classList.remove('invalid', 'valid', 'pulse-low', 'pulse-med', 'pulse-high');
             if (currentInput.length >= 9) box.classList.add('pulse-high');
             else if (currentInput.length >= 6) box.classList.add('pulse-med');
-            const fill = document.getElementById('meterFill');
-            let pct = currentMaxLen > 0 ? (currentInput.length / currentMaxLen) * 100 : 0;
-            fill.style.width = `${Math.min(100, pct)}%`;
-            if (pct >= 100) fill.classList.add('maxed'); else fill.classList.remove('maxed');
         }
 
         function renderHistory() {
             const list = document.getElementById('historyList'); list.innerHTML = '';
-            for(let i=0; i<MAX_ROUNDS; i++) {
-                const a = attempts[i]; const div = document.createElement('div');
-                if(a) {
-                    div.className = 'attempt-row clickable'; div.onclick = () => fetchDefinition(a.word);
-                    div.innerHTML = `<span class="round-badge">S${i+1}</span><span style="font-family:'Lora',serif;font-weight:700;font-size:1.2rem;color:#4f46e5;flex-grow:1;text-align:center;">${a.word.toUpperCase()}</span><span class="attempt-score">+${a.len} pts</span>`;
-                } else { div.className = 'attempt-row empty-slot'; div.textContent = `Stage ${i+1}`; }
+            for(let i=0; i<MAX_GUESSES; i++) {
+                const g = currentGuesses[i]; const div = document.createElement('div');
+                if(g) {
+                    div.className = 'attempt-row clickable'; div.onclick = () => fetchDefinition(g.word);
+                    let lenHint = g.lenDiff < 0 ? '📏 Longer' : g.lenDiff > 0 ? '📏 Shorter' : '📏 Exact';
+                    let alphaHint = g.alphaDiff < 0 ? '📖 Later (A→Z)' : g.alphaDiff > 0 ? '📖 Earlier (Z→A)' : '📖 Exact';
+                    
+                    if (g.lenDiff === 0 && g.alphaDiff === 0) {
+                        div.innerHTML = `<div style="display:flex; flex-direction:column; width:100%;">
+                            <div style="font-family:'Lora',serif;font-weight:700;font-size:1.3rem;color:#10b981;">${g.word.toUpperCase()}</div>
+                            <div style="margin-top:5px;"><span class="hint-badge correct">🌟 Correct Match!</span></div></div>`;
+                    } else {
+                        div.innerHTML = `<div style="display:flex; flex-direction:column; width:100%;">
+                            <div style="font-family:'Lora',serif;font-weight:700;font-size:1.15rem;color:#4f46e5;">${g.word.toUpperCase()}</div>
+                            <div style="display:flex; gap:8px; margin-top:5px;">
+                                <span class="hint-badge">${lenHint}</span>
+                                <span class="hint-badge">${alphaHint}</span>
+                            </div></div>`;
+                    }
+                } else { div.className = 'attempt-row empty-slot'; div.textContent = `Guess ${i+1}`; }
                 list.appendChild(div);
             }
         }
 
         function endGame(isReplay = false) {
             document.getElementById('submitBtn').disabled = true;
-            const totalScore = attempts.reduce((sum, a) => sum + a.len, 0);
-            if (!isReplay) saveGameStats(totalScore, totalScore >= dailyData.targetScore);
-            document.getElementById('finalScore').innerText = totalScore; 
-            document.getElementById('finalRank').innerText = `Target: ${dailyData.targetScore} pts`;
-            if (totalScore >= dailyData.targetScore) {
-                document.getElementById('endGameTitle').innerText = "Target Achieved! 🏆";
+            const wordsFound = dailyHistory.filter(h => h.won).length;
+            
+            if (!isReplay) saveGameStats(wordsFound, wordsFound === 3);
+            
+            document.getElementById('finalScore').innerText = `${wordsFound}/3 Found`; 
+            if (wordsFound === 3) {
                 if (!isReplay) triggerMassiveCelebration();
             }
+            
             const cc = document.getElementById('endGameComparison'); cc.innerHTML = '';
-            for(let i = 0; i < MAX_ROUNDS; i++) {
-                const a = attempts[i]; const bWord = dailyData.rounds[i].susieWord;
-                cc.innerHTML += `<div class="comp-row"><div class="comp-stage">S${i+1}</div><div class="comp-player">${a?a.word.toUpperCase():'---'} <span style="font-size:0.75rem;color:#94a3b8;">(${a?a.len:0})</span></div><div class="comp-best">${bWord.toUpperCase()} <span style="font-size:0.75rem;color:#10b981;">(${bWord.length})</span></div></div>`;
-            }
+            dailyHistory.forEach((h, i) => {
+                const scoreStr = h.won ? `<span style="color:#10b981;">${h.guessCount}/5</span>` : `<span style="color:#ef4444;">X/5</span>`;
+                cc.innerHTML += `<div class="comp-row"><div class="comp-stage">S${i+1}</div><div class="comp-player" style="color:#334155;">${h.target.toUpperCase()}</div><div class="comp-best">${scoreStr}</div></div>`;
+            });
+            
             document.getElementById('mainGameArea').classList.add('hidden');
             setTimeout(() => document.getElementById('gameOverModal').classList.remove('hidden'), 800);
         }
 
-        function saveGameStats(finalLen, won) {
-            let s = JSON.parse(localStorage.getItem(STATS_KEY)) || { played:0, streak:0, maxStreak:0, bestWord:0 };
+        function saveGameStats(wordsFound, flawless) {
+            let s = JSON.parse(localStorage.getItem(STATS_KEY)) || { played:0, found:0, streak:0, maxStreak:0 };
             s.played++; 
-            if (won) { s.streak++; if (s.streak > s.maxStreak) s.maxStreak = s.streak; } else { s.streak = 0; }
-            if (finalLen > s.bestWord) s.bestWord = finalLen;
+            s.found += wordsFound;
+            if (flawless) { s.streak++; if (s.streak > s.maxStreak) s.maxStreak = s.streak; } else { s.streak = 0; }
             localStorage.setItem(STATS_KEY, JSON.stringify(s));
-            localStorage.setItem('headlines_last_play', JSON.stringify({ date: getTodayStr(), attempts: attempts }));
+            localStorage.setItem('headlines_daily_save', JSON.stringify({ date: getTodayStr(), history: dailyHistory }));
         }
 
         function shareResult() {
             let txt = "";
-            attempts.forEach((a, i) => {
-                const mL = dailyData.rounds[i].susieWord.length;
-                const f = Math.round(Math.min(1, a.len / mL) * 5);
-                const icon = (a.len > mL) ? '🌟' : ((a.len === mL) ? '🟪' : '🟦');
-                txt += `S${a.round}: ${icon.repeat(Math.max(1, f))} ${a.len} letter word!\n`;
+            dailyHistory.forEach((h, i) => {
+                const score = h.won ? `${h.guessCount}/5` : `X/5`;
+                const icon = h.won ? '🟩' : '🟥';
+                txt += `S${i+1}: ${icon} ${score}\n`;
             });
-            const totalScore = attempts.reduce((sum, a) => sum + a.len, 0);
-            const targetStr = totalScore >= dailyData.targetScore ? "🏆 Target Achieved!" : "😅 Missed Target";
-            const shareText = `Headlines 🗞️\n${dailyData.dynamicDayName}\n\n${txt}\nScore: ${totalScore}/${dailyData.targetScore} pts\n${targetStr}\nPlay here: https://venvoit.github.io/echo/`;
+            const wordsFound = dailyHistory.filter(h => h.won).length;
+            const shareText = `Headlines 🗞️\n${dailyData.dynamicDayName}\n${dailyData.phrase}\n\n${txt}\nFound: ${wordsFound}/3\nPlay here: https://venvoit.github.io/echo/`;
+            
             if (!navigator.clipboard) { fallbackCopyTextToClipboard(shareText); return; }
             navigator.clipboard.writeText(shareText).then(() => showToast("Result copied!", "📋")).catch(() => fallbackCopyTextToClipboard(shareText));
         }
@@ -586,7 +580,7 @@
         function triggerMassiveCelebration() {
             document.body.classList.add('shake-active'); setTimeout(() => document.body.classList.remove('shake-active'), 500);
             const overlay = document.createElement('div'); overlay.className = 'mega-celebration-overlay';
-            const banner = document.createElement('div'); banner.className = 'mega-banner'; banner.innerText = '🏆 TARGET SMASHED! 🏆'; overlay.appendChild(banner);
+            const banner = document.createElement('div'); banner.className = 'mega-banner'; banner.innerText = '🏆 FLAWLESS VICTORY 🏆'; overlay.appendChild(banner);
             const emojis = ['🌟', '💥', '🏆', '🔥', '✨', '🎉'];
             for(let i=0; i<60; i++) {
                 const p = document.createElement('div'); p.className = 'mega-particle'; p.innerText = emojis[Math.floor(Math.random() * emojis.length)];
@@ -616,32 +610,26 @@
                 const d = await res.json(); const e = d[0];
                 c.innerHTML = `<div class="dict-word">${w}</div>`;
                 e.meanings.slice(0, 2).forEach(m => { c.innerHTML += `<div class="dict-meaning"><div class="dict-pos">${m.partOfSpeech}</div><div class="dict-def">${m.definitions[0].definition}</div></div>`; });
-            } catch (err) { c.innerHTML = `<div class="dict-word">${w}</div><div class="dict-def">Susie confirms it's valid, but we couldn't fetch a definition.</div>`; }
+            } catch (err) { c.innerHTML = `<div class="dict-word">${w}</div><div class="dict-def">A valid Scrabble word, but we couldn't fetch a definition.</div>`; }
         }
 
         function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
         function setupKeyboard() {
             document.addEventListener('keydown', (e) => {
-                if (!document.getElementById('introModal').classList.contains('hidden')) {
-                    if (e.key === 'Backspace') tutDel(); else if (['T','E','S'].includes(e.key.toUpperCase())) tutType(e.key.toUpperCase());
-                    return; 
-                }
+                if (!document.getElementById('introModal').classList.contains('hidden')) { return; }
                 if (document.querySelector('.modal-overlay:not(.hidden)')) return;
                 if (e.key === 'Backspace') { e.preventDefault(); deleteChar(); }
                 else if (e.key === 'Enter') { e.preventDefault(); submitWord(); }
                 else { const up = e.key.toUpperCase(); if (dailyData.rounds[currentRound].letters.includes(up)) typeChar(up); }
             });
         }
-        function tutType(c) { if (document.getElementById('tutInput').innerText === 'TEST') return; document.getElementById('tutInput').innerText += c; if (document.getElementById('tutInput').innerText === 'TEST') { document.getElementById('tutSuccess').style.display='block'; document.getElementById('tutStartBtn').style.opacity=1; document.getElementById('tutStartBtn').style.pointerEvents='auto'; } }
-        function tutDel() { if (document.getElementById('tutInput').innerText === 'TEST') return; document.getElementById('tutInput').innerText = document.getElementById('tutInput').innerText.slice(0,-1); }
         function prevDay() { loadDay(currentDayIndex - 1, true); }
         function nextDay() { loadDay(currentDayIndex + 1, true); }
         function resetDay() { loadDay(currentDayIndex, true); }
         function toggleDev() { document.getElementById('devPanel').classList.toggle('collapsed'); }
-        function openStats() { const s = JSON.parse(localStorage.getItem(STATS_KEY)) || {played:0,streak:0,maxStreak:0,bestWord:0}; document.getElementById('statPlayed').innerText=s.played; document.getElementById('statStreak').innerText=s.streak; document.getElementById('statMaxStreak').innerText=s.maxStreak; document.getElementById('statBestWord').innerText=s.bestWord; document.getElementById('statsModal').classList.remove('hidden'); }
+        function openStats() { const s = JSON.parse(localStorage.getItem(STATS_KEY)) || {played:0,found:0,streak:0,maxStreak:0}; document.getElementById('statPlayed').innerText=s.played; document.getElementById('statFound').innerText=s.found; document.getElementById('statStreak').innerText=s.streak; document.getElementById('statMaxStreak').innerText=s.maxStreak; document.getElementById('statsModal').classList.remove('hidden'); }
         function showToast(m,i) { const t=document.getElementById('toast'); document.getElementById('toastMessage').innerText=m; document.getElementById('toastIcon').innerText=i; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'), 3000); }
         function fallbackCopyTextToClipboard(text) { var t = document.createElement("textarea"); t.value = text; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); showToast("Copied!", "📋"); }
-        function openCheat() { const list = document.getElementById('cheatList'); list.innerHTML = ''; Array.from(currentValidSet).sort((a,b)=>b.length-a.length).slice(0,20).forEach(w=>{ list.innerHTML+=`<div>${w.toUpperCase()} (${w.length})</div>`; }); document.getElementById('cheatModal').classList.remove('hidden'); }
     </script>
 </body>
 </html>
